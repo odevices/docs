@@ -26,9 +26,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: odevices
 github_username:  odevices
+logo: images/logo-forweb.jpg
 
 # Build settings
-theme: minima
+# theme: minima
+theme: "just-the-docs"
+# remote_theme: pmarsceill/just-the-docs
 
 plugins:
   - jemoji
