@@ -56,5 +56,5 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 exclude: 
-  - notes.md
+  - README.md
 
