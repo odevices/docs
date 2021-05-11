@@ -5,7 +5,7 @@ parent: ER-301
 ---
 
 {% include figure.html 
-  file="er-301-panel-annotated.png" 
+  file="/images/er-301-panel-annotated.png" 
 %}
 
 # Overview 
@@ -19,7 +19,7 @@ Also, if you wish to make your own custom panel you can download the panel desig
 
 # The Knob
 {% include figure.html
-  file="er-301-knob.png"
+  file="/images/er-301-knob.png"
   caption="A context-sensitive knob to handle all parameter adjustments."
 %} 
 The Knob is an endless encoder with a resolution of 100 pulses per revolution and a very long-life of more than 1 million revolutions.  The two main purposes of the Knob are scrolling through the UI and setting parameters.  The Knob's focus is always indicated by the dancing cursor which depending on the situation might be selecting something in the Main Display or the Sub Display.

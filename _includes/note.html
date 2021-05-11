@@ -1,5 +1,6 @@
-<div style="background-color: lightgray; ">
-  <div style="margin: 20px;">
-  <b>Note</b><br>
-  {{ include.content }}
-</div></div>
+<div style="border: 1px solid black;background-color:lightgray;">
+  <div style="margin:20px">
+    <b>Note</b>
+    {{ include.content | markdownify }}
+  </div>
+</div>
