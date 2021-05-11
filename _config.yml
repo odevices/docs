@@ -17,6 +17,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+remote_theme: pmarsceill/just-the-docs@v0.3.0 # XXX Our Jekyll theme - See https://pmarsceill.github.io/just-the-docs/
 
 title: Docs
 email: clarkson@orthogonaldevices.com
@@ -31,7 +32,6 @@ logo: images/logo-forweb.jpg
 # Build settings
 # theme: minima
 #theme: "just-the-docs"
-remote_theme: pmarsceill/just-the-docs
 
 plugins:
   - jemoji
