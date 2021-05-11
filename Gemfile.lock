@@ -268,8 +268,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages (~> 214)
   jemoji
-  just-the-docs
-  minima (~> 2.5)
+  just-the-docs (= 0.3.3)
 
 BUNDLED WITH
    2.2.16

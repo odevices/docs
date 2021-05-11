@@ -17,7 +17,7 @@ gem "github-pages", "~> 214", group: :jekyll_plugins
 
 group :jekyll_plugins do
   # If you have any plugins, put them here!
-  gem 'just-the-docs', '0.3.0' # XXX Our Jekyll theme - See https://pmarsceill.github.io/just-the-docs/
+  gem 'just-the-docs', '0.3.3' # XXX Our Jekyll theme - See https://pmarsceill.github.io/just-the-docs/
   gem "jemoji"
 end
 
