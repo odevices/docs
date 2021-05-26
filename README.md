@@ -1,7 +1,15 @@
-# To connect with phone or another device
+# Install a development environment
 
 ```
-jekyll serve --host 0.0.0.0
+sudo apt install ruby-full build-essentials
+sudo gem install bundler
+bundle install
+```
+
+# Start a development web server
+
+```
+bundle exec jekyll serve --host 0.0.0.0
 ```
 
 # if ufw is enabled then..
@@ -19,5 +27,5 @@ https://github.com/jeffreytse/jekyll-deploy-action
 Get path to theme files:
 
 ```
-bundle info --path minima
+bundle info --path just-the-docs
 ```

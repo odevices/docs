@@ -1,0 +1,22 @@
+<div style="display:flex;flex-wrap:wrap;">
+  {% assign gridWidth = include.gridWidth | default: 220 %}
+  {% for i in (1..include.count) %}
+  {% assign fileKey = i | prepend: 'file' %}
+  {% assign captionKey = i | prepend: 'caption' %}
+  {% assign filename = include[fileKey] | prepend: "/images/" | relative_url %}
+  {% assign caption = include[captionKey] %}
+  <div style="width:{{ gridWidth | plus: 20 }}px;">
+    <div style="width:{{ gridWidth | plus: 15 }}px">
+      <div style="margin:15px auto">
+        <a href="{{ filename }}">
+          <img src="{{ filename }}" width="{{ gridWidth }}" />
+        </a>
+      </div>
+      <div style="font-size:85%;margin-left:0px;margin-right:10px;">
+        {{ caption | markdownify }}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+  <br clear=all>
+</div>

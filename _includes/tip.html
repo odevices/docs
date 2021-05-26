@@ -1,6 +1,14 @@
-<div style="border: 1px solid black;background-color:rgb(247, 236, 181);">
-  <div style="margin:20px;">
-    <b>Tip</b>
-    {{ include.content | markdownify }}
-  </div>
+<div style="float:none;border:0px;padding:5px;">
+  <table cellspacing="0" style="border:0px #b6dbf8;">
+    <tbody>
+      <tr>
+        <td style="border:0px #b6dbf8;background-color:#b6dbf8">
+          <img src="{{ "/images/light-bulb.png" | relative_url }}" width="72" height="72">
+        </td>
+        <td style="border:0px #b6dbf8;padding-left:5px;background-color:#b6dbf8">
+          {{ include.content | markdownify }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

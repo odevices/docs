@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Raw Player
-parent: Units
+parent: Core Units
 grand_parent: ER-301
 ---
 
