@@ -51,7 +51,7 @@ A quicksave stores *all* of the essential state of the ER-301 in one place for r
 * Multitrack recorder configuration
 * Sample pool contents (links only)
 * Mute state of OUT1-OUT4 chains
-* Recently inserted units
+* Contents of the Recents category in the Unit Chooser
 
 {% include pitfall.html
   content="**Admin > System Settings**<br>These configuration settings are stored on the rear SD card.  So they are completely independent of the front SD card and thus independent of the quicksaves."
