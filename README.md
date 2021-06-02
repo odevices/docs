@@ -1,7 +1,10 @@
-Welcome to the product documentation for end-users.
+# ```O|D``` Documentation
 
+[docs.orthogonaldevices.com](https://docs.orthogonaldevices.com)
 
-## Install the development environment
+## How to contribute
+
+### Install the development environment
 
 ```bash
 sudo apt install ruby-full build-essentials
@@ -9,7 +12,7 @@ sudo gem install bundler
 bundle install
 ```
 
-## Start the development web server
+### Start the development web server
 
 ```bash
 bundle exec jekyll serve --host 0.0.0.0
