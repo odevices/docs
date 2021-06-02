@@ -1,4 +1,4 @@
-# ```O|D``` Documentation
+# O\|D Documentation
 
 [docs.orthogonaldevices.com](https://docs.orthogonaldevices.com)
 
