@@ -18,5 +18,5 @@ bundle install
 bundle exec jekyll serve --host 0.0.0.0
 ```
 
-The site will be served from [http://localhost:4000](http://localhost:4000).
+Your development site will be served locally from [http://localhost:4000](http://localhost:4000).
 
