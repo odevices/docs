@@ -4,7 +4,7 @@ layout: default
 
 <img src="https://www.orthogonaldevices.com/images/logo-forweb.jpg">
 
-## Welcome to the ```O|D``` documentation.
+## Welcome to the O\|D documentation.
 Report problems or make suggestions on the [forum](https://forum.orthogonaldevices.com).  If you would like to contribute, head over to [github.com/odevices/docs](https://github.com/odevices/docs).
 
 <div class="phone-only">
