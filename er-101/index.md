@@ -5,4 +5,8 @@ has_children: false
 nav_order: 1
 ---
 
-<object data="{{ "/images/er-101-user-manual-f2.09.pdf" | relative_url }}" type="application/pdf" style="min-height:100vh;width:100%"></object>
+# {{page.title}}
+
+I'm in the process of migrating the ER-101 manual to this markdown-based format.  In the meantime, here is a link to the PDF manual.
+
+[ER-101 User Manual (v2.09)](/images/er-101-user-manual-f2.09.pdf)
