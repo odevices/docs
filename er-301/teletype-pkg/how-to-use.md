@@ -18,8 +18,8 @@ nav_order: 1
 # Required Hardware Connections 
 
 * First determine your [board revision](/er-301/behind-panel/revisions).
-* If you have an ER-301 with board revision 7 (i.e. ER-301 manufactured before June 2018), then please go [here](i2c-rev7)].
-* Otherwise go [here](i2c).
+* If you have an ER-301 with board revision 7 (i.e. ER-301 manufactured before June 2018), then please go [here](/er-301/behind-panel/i2c-rev7).
+* Otherwise go [here](/er-301/behind-panel/i2c).
 
 # Current Status 
 As of v0.3.06 of the ER-301 firmware, there is support for teletype to control the ER-301 over the i2c bus.  There is a discussion thread over on the forum dedicated to this topic:
