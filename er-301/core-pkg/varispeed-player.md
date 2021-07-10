@@ -7,38 +7,9 @@ grand_parent: ER-301
 ---
 
 ## Overview
-This unit combines a monophonic resampling play head with a (in-memory) sample buffer.  The main feature of this unit is that the speed of the play head can be accurately modulated up to audio rates.  Sample slicing is also included for further control over what parts of the sample buffer are played.
+This unit combines a monophonic resampling play head with a (in-memory) sample buffer.  The main feature of this unit is that the speed of the play head can be sample-accurately modulated up to audio rates.  However, regardless of the values of the speed and V/oct parameters, the unit clamps the final speed to be within the range -64x to 64x (i.e. 6 octaves).
 
-{% include figure.html
-file="er-301/core/play-head-behavior-no-slices-forward.png"
-%}
-
-{% include figure.html
-file="er-301/core/play-head-behavior-no-slices-reverse.png"
-%}
-
-When a sample with no slices is loaded, the play head will just keep advancing and looping back to the beginning (or ending) when it reaches the end (or beginning) because there is nothing to  tell it otherwise. Triggering will cause the play head to jump back to the beginning/ending of the sample.  You can insert slices but they are not seen by the play head until you activate one (via triggering). You can trigger a sample player either by a gate signal into the trig parameter or manually by hitting the *fire* button that ORs your manually created gate with the incoming modulation signal.  Here is a mini-walkthrough that shows what I mean:
-
-1. Load up a Varispeed Player and attach a sample with 5 slices.
-1. Set Play Extent to **slice**, CV-to-Slice Mapping to **index**, and Slice Polarity to **symmetric**.
-1. Make sure the bias of [speed](#speed) parameter is set to 1x.
-1. Set the bias of the [slice](#slice) parameter to 0 and manually *fire* (i.e. S3) the [gate](#gate) parameter.  The 1st slice should play.
-1. Set the bias of the [slice](#slice) parameter to 0.25 and manually *fire* the [gate](#gate) parameter.  The 2nd slice should play.
-1. Set the bias of the [slice](#slice) parameter to 0.5 and manually *fire* the [gate](#gate) parameter.  The 3rd slice should play.
-1. Set the bias of the [slice](#slice) parameter to 0.75 and manually *fire* the [gate](#gate) parameter.  The 4th slice should play.
-1. Set the bias of the [slice](#slice) parameter to 1.0 and manually *fire* the [gate](#gate) parameter.  The 5th slice should play.
-
-Once a slice is activated, the reset position becomes the active slice and the stop position becomes the next slice in the case of forward playback, and the previous slice in the case of reverse playback.
-
-{% include figure.html
-file="er-301/core/play-head-behavior-sliced-forward.png"
-%}
-
-{% include figure.html
-file="er-301/core/play-head-behavior-sliced-reversed.png"
-%}
-
-In both the **no slices** and **sliced** case, if the [shift](#shift) parameter is non-zero then the reset position of the play head will be shifted by a time interval equal to the shift parameter's value.
+[Slice playback](/er-301/samples/slice-playback) is also included for further control over what parts of the sample buffer are played.
 
 ## Parameters
 
@@ -91,5 +62,5 @@ content="Combine modulation of this parameter with rapid triggering (>10Hz) to s
 The output might jump discontinuously when the play head loops at the beginning (ending) of the sample, or, when a trigger resets the play head position.  When this happens, a fade is used smooth over the discontinuity in the output thus suppressing pops.  This parameter sets the length of the fade used.
 
 {% include pitfall.html
-content="If you are using a single cycle wave sample to recreate a wavetable oscillator then it is recommended that you set this parameter to zero."
+content="If you are using a single cycle wave sample to recreate a wavetable oscillator then it is recommended that you set this parameter to zero.  An even better option is to use the [Single Cycle](single-cycle) unit."
 %}
