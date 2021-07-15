@@ -8,14 +8,14 @@ grand_parent: ER-301
 
 
 {% include figure.html 
-file="er-301/core/adsr.png"
+file="adsr.png"
 %}
 
 ## Overview
 A traditional ADSR envelope with modulate-able controls for the 4 stages: attack time, decay time, sustain level and release time.
 
 {% include figure.html
-file="er-301/core/adsr-graph.png"
+file="adsr-graph.png"
 %}
 
 ## Parameters

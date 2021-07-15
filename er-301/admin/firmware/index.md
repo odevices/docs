@@ -3,7 +3,6 @@ layout: default
 title: Updating Firmware
 parent: Admin
 grand_parent: ER-301
-nav_order: 8
 ---
 
 # {{page.title}}
@@ -17,21 +16,21 @@ Unless there is a problem, you will always update the ER-301's firmware via the 
 **Follow these 8 steps to change your ER-301's firmware:**
 {% include gallery.html
 count=8
-file1="er-301/firmware/download.png"
+file1="download.png"
 caption1="Step 1: [Download](https://github.com/odevices/er-301/releases) the firmware (zip) file. (**Mac Users:** Your browser might automatically try to unzip the file for you when you download. To prevent this, please right-click and choose **Download Linked Files**.)"
-file2="er-301/firmware/sd-card-reader.jpg"
+file2="sd-card-reader.jpg"
 caption2="Step 2: Copy the zip file (without unzipping) to the FRONT microSD card. Any location is fine but you might want to create a folder called 'firmware' so that you can easily find and move between different firmware versions."
-file3="er-301/firmware/switch-eject.jpg"
+file3="switch-eject.jpg"
 caption3="Step 3: Make sure the STORAGE switch is in the EJECT position and insert the microSD card into the FRONT slot of the ER-301."
-file4="er-301/firmware/switch-admin.jpg"
+file4="switch-admin.jpg"
 caption4="Step 4: Move the STORAGE switch from EJECT to ADMIN (i.e. mount the card)."
-file5="er-301/firmware/screen.png"
+file5="screen.png"
 caption5="Step 5: Navigate to the UPDATE FIRMWARE screen."
-file6="er-301/firmware/press-update.png"
+file6="press-update.png"
 caption6="Step 6: Press UPDATE (S1)."
-file7="er-301/firmware/select.png"
+file7="select.png"
 caption7="Step 7: Select the zip file that you downloaded and press ENTER. The selected firmware will be installed on your ER-301's rear SD card."
-file8="er-301/firmware/reboot.png"
+file8="reboot.png"
 caption8="Step 8: Once the files are installed, press REBOOT (S3)."
 %}
 

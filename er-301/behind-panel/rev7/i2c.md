@@ -17,7 +17,7 @@ content="Since these connection pins were originally meant for UART communicatio
 **Please note:** The ER-301 does not ship with i2c cables.  Here is some info on how to DIY your own cables: [DIY i2c cables @ LINES forum](https://llllllll.co/t/diy-i2c-cables/12833?u=odevices).
 
 {% include figure.html
-file="er-301/i2c/rev7/wiring-zoom-out.jpg"
+file="i2c/wiring-zoom-out.jpg"
 %}
 
 There are 5 pins extending parallel from underneath the ER-301 CPU board. You will only be using the top 3. You can also see that the 5 pins are labeled on the ER-301 silkscreen as TX, RX, GND, GND, and 5V. Connect like this:
@@ -27,7 +27,7 @@ There are 5 pins extending parallel from underneath the ER-301 CPU board. You wi
 * Teletype SDA to ER-301 RX.
 
 {% include figure.html
-file="er-301/i2c/rev7/wiring.jpg"
+file="i2c/wiring.jpg"
 %}
 
 # Required Hardware Modification 
@@ -48,17 +48,17 @@ Required tools:
 
 {% include gallery.html
 count=6
-file1="er-301/i2c/rev7/shunt-cut.jpg"
+file1="i2c/shunt-cut.jpg"
 caption1="Step 1: Cut a 7mm piece of solid core wire or use part of a lead from a resistor or LED."
-file2="er-301/i2c/rev7/shunt-before-bend.jpg"
+file2="i2c/shunt-before-bend.jpg"
 caption2="Step 2: Bend it around some needle-nose pliers."
-file3="er-301/i2c/rev7/shunt-created.jpg"
+file3="i2c/shunt-created.jpg"
 caption3="Step 3: You should have a nice boxy U-shape like this."
-file4="er-301/i2c/rev7/shunt-closeup.jpg"
+file4="i2c/shunt-closeup.jpg"
 caption4="Step 4: Place around diode D3 like this with the bottom of the U oriented towards the bottom of the board so that we do not short resistor R62."
-file5="er-301/i2c/rev7/diode-shunted.png"
+file5="i2c/diode-shunted.png"
 caption5="Step 5: And solder like this."
-file6="er-301/i2c/rev7/continuity-with-RX-SDA.png"
+file6="i2c/continuity-with-RX-SDA.png"
 caption6="Step 6: Check continuity between the right side of R62 and the RX/SDA pin of the UART connector."
 %}
 

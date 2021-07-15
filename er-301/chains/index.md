@@ -17,10 +17,10 @@ nav_order: 2
 
 # Overview
 
-A chain is a sequence of [units](units) with signal coming in to the chain via a source, flowing through the units and then leaving the chain via a sink.  All sinks have exactly one chain associated with them, making sinks and chains one-to-one.  
+A chain is a sequence of [units](/er-301/units) with signal coming in to the chain via a source, flowing through the units and then leaving the chain via a sink.  All sinks have exactly one chain associated with them, making sinks and chains one-to-one.  
 
 {% include figure.html
-  file="er-301/chain-anatomy/overview.png"
+  file="overview.png"
   caption="Anatomy of a (stereo) chain."
 %}
 
@@ -34,11 +34,11 @@ It is not required to assign a sink to a chain.  Instead, every sink is associat
 
 {% include gallery.html
   count=3
-  file1="er-301/chain-anatomy/out12-chain.png"
+  file1="out12-chain.png"
   caption1="This stereo chain routes to the stereo channel group OUT1+OUT2."
-  file2="er-301/chain-anatomy/sample-player-shift-chain.png"
+  file2="sample-player-shift-chain.png"
   caption2="This mono chain routes to the 'shift' control of a Sample Player unit."
-  file3="er-301/chain-anatomy/global-clock-chain.png"
+  file3="global-clock-chain.png"
   caption3="This mono chain routes to a user-created global source called 'clock'."
 %}
 
@@ -49,12 +49,12 @@ It is not required to assign a sink to a chain.  Instead, every sink is associat
 The name section of the chain UI (also referred to as the header) shows a menu (in the sub-display) when it is focused:
 
 {% include figure.html
-file="er-301/chain-anatomy/mono-chain-header.png"
+file="mono-chain-header.png"
 caption="When the chain header is focused a menu of chain operations is shown in the sub-display."
 %}
 
 * **Clear**: Deletes all units in the chain.
-* **Load**: Load a [chain preset](persistence#chain-presets) from the SD card.
+* **Load**: Load a [chain preset](/er-301/persistence#chain-presets) from the SD card.
 * **Save**: Save the current chain's state (source assignments and units) to a preset file on the SD card.
 
 {% include tip.html
@@ -63,7 +63,7 @@ content="When viewing a chain and its contained units, pressing HOME will move t
 
 # Source 
 {% include figure.html
-file="er-301/chain-anatomy/input-source-selection.png"
+file="input-source-selection.png"
 caption="Pressing the M button underneath a chain's source area brings you to this screen where you can select from external inputs, local sources, and global sources."
 %}
 
@@ -77,15 +77,20 @@ You select a chain's source by using the source menu located in the header of a 
 On the other hand, pressing clear (S3) will clear any existing source assignment from the focused channel.
 
 # Inserting Units 
-Units can be inserted at any position in a chain by placing the cursor at the desired location (such as the beginning/ending of the chain, or, between two units) and pressing the insert (S3) button.  This will bring you to the unit selection menu where you can choose from a growing [library of units](core).
+Units can be inserted at any position in a chain by placing the cursor at the desired location (such as the beginning/ending of the chain, or, between two units) and pressing the insert (S3) button.  This will bring you to the unit selection menu where you can choose from a growing collection of units:
+
+* [Builtin Units](/er-301/builtins) (built into the firmware)
+* [Core Package](/er-301/core-pkg) (provided by O`|D)
+* [Teletype Package](/er-301/teletype-pkg) (provided by O`|D)
+* [ER-301 hub](https://er301-hub.netlify.app/) (created by users)
 
 {% include gallery.html
   count=3
-  file1="er-301/chain-anatomy/insert-between.png"
+  file1="insert-between.png"
   caption1="Placing the cursor in between units will reveal an insert button (S3), as well as a sub-display scope that shows the signal that is passing through here."
-  file2="er-301/chain-anatomy/unit-selection.png"
+  file2="unit-selection.png"
   caption2="Pressing the insert button (S3), takes us to the unit selection screen where we can scroll through the available units with the knob and choose one to instantiate using its corresponding M button."
-  file3="er-301/chain-anatomy/unit-selection-filtering.png"
+  file3="unit-selection-filtering.png"
   caption3="If you hold down one of the S buttons and turn the knob, you can change the filter operands and thus pare down the number of displayed units to a particular type."
 %}
 

@@ -1,7 +1,7 @@
 {% assign divWidth = include.width | default: "75%" %}
 <div style="display:block;margin-top:1cm;margin-bottom:1cm;margin-left:auto;margin-right:auto;font-size:85%;width:{{divWidth}};">
-  <a href="{{ include.file | prepend: "/images/" | relative_url }}">
-    <img src="{{ include.file | prepend: "/images/" | relative_url }}">
+  <a href="{{ include.file }}">
+    <img src="{{ include.file }}" alt="{{ include.file }}">
   </a>
   <figcaption>
     {{ include.caption | markdownify }}

@@ -3,7 +3,6 @@ layout: default
 title: Screenshots
 parent: Admin
 grand_parent: ER-301
-nav_order: 10
 ---
 
 Take a screenshot anytime using SHIFT+CANCEL. Images (PNG) are saved to the ```ER-301/<version>/screenshots``` folder.

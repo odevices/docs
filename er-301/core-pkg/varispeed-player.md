@@ -44,7 +44,7 @@ If the Play Count setting is "repeat" then a trigger on this parameter can be us
 This parameter selects a slice.  The next incoming edge received at the [gate](#gate) parameter will activate this slice.  The mapping of parameter value to the actual slice depends on the [Address Mode](#address-mode) setting.
 
 {% include pitfall.html
-content="It is often the case that the external signal used to select the slice is delayed with respect to the trigger that is activating the slice.  This will cause inconsistent slice activation (see [this](/er-301/selection-via-cv-gate) for a detailed explanation).  The solution is to insert a small (~2ms) delay in the sub-chain feeding the trigger parameter so that the trigger arrives after the slice selection signal settles.  You can use a [Micro Delay](micro-delay) unit for this purpose."
+content="It is often the case that the external signal used to select the slice is delayed with respect to the trigger that is activating the slice.  This will cause inconsistent slice activation (see [this](/er-301/articles/selection-via-cv-gate) for a detailed explanation).  The solution is to insert a small (~2ms) delay in the sub-chain feeding the trigger parameter so that the trigger arrives after the slice selection signal settles.  You can use a [Micro Delay](micro-delay) unit for this purpose."
 %}
 
 ### shift

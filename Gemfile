@@ -21,4 +21,5 @@ group :jekyll_plugins do
   gem "jemoji"
 end
 
-
+gem 'rake'
+gem 'html-proofer'

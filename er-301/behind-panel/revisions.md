@@ -3,7 +3,6 @@ layout: default
 title: Hardware Revisions
 parent: Behind the Panel
 grand_parent: ER-301
-nav_order: 7
 ---
 
 You can find the ER-301 board revision number printed on the back near the OUT1 and OUT2 jacks.
@@ -29,6 +28,6 @@ Units sold from June 2018 and onwards are revision 10.  The differences are quit
 
 {% include figure.html
 width="100%"
-file="er-301/revisions/compare-rev10-rev7.jpg"
+file="compare-rev10-rev7.jpg"
 caption="A comparison of revision 10 (left) and revision 7 (right)."
 %}

@@ -20,12 +20,8 @@ nav_order: 3
 A unit encapsulates a signal processing algorithm and exposes it parameters as controls.  Signal enters a unit either from the left or via its control ports (from below).  A unit outputs the final signal to the right.  Stereo chains will contain only stereo units, while mono chains will contain only mono units.
 
 {% include figure.html
-file="er-301/unit-anatomy/unit-header.png"
+file="unit-header.png"
 caption="A unit's header menu contains commands for bypassing, re-init'ing, and deleting itself."
-%}
-
-{% include detail.html
-content="For further details on available units, see the [library of units](core)."
 %}
 
 If you move the cursor over to any unit's header area (i.e. or press HOME while the cursor is inside a unit), the sub-display will switch to the unit's header menu containing 3 commands:
@@ -38,22 +34,22 @@ If you move the cursor over to any unit's header area (i.e. or press HOME while 
 
 All units have these commands.
 
-## Rename (Unit)
+## Rename
 
-## Load (Preset)
+## Load
 
-## Save (Preset)
+## Save
 
 ## Bypass
 
 {% include figure.html
-file="er-301/unit-anatomy/bypassed-unit.png"
+file="bypassed-unit.png"
 caption="This unit has been bypassed."
 %}
 Activating the Bypass command located in a unit's header menu will cause the unit's output to be disconnected from the next (non-bypassed) unit.  The next unit will instead get its input from the previous (non-bypassed) unit.
 
 {% include figure.html
-file="er-301/bypass.png"
+file="bypass.png"
 caption="Units can be bypassed such that they still receive an input signal but their outputs are ignored."
 %}
 
@@ -65,7 +61,7 @@ content="By default, a bypassed unit will still process its inputs and thus cons
 There is a setting in Admin>Settings that let's you choose whether bypassing a unit should also disable it.  In this context, "disabling a unit" means removing it from the DSP scheduler so that the unit no longer consumes CPU cycles.  Un-bypassing the unit will re-enable it.
 
 {% include figure.html
-file="er-301/unit-anatomy/bypass-disable-setting.png"
+file="bypass-disable-setting.png"
 caption="Here is the relevant setting for changing the disable behavior of a bypassed unit."
 %}
 
@@ -79,18 +75,6 @@ caption="Here is the relevant setting for changing the disable behavior of a byp
 ## Expand
 
 ## Edit Controls
-
-## Sample-related Commands
-
-Only units that use samples have these commands.
-
-## Select from Card
-
-## Select from Pool
-
-## Detach Buffer
-
-## Edit Buffer
 
 # Control Types
 Most units have controls that allow you to alter the parameters of its algorithm.  Various types of controls are needed to handle the wide variety of of algorithmic parameters as well as their various ranges and quantities (e.g. frequency, time, gain, pitch, and so on).  
@@ -106,11 +90,11 @@ The quantity, range, and units of the bias value will depend on the actual param
 
 {% include gallery.html
   count=3
-  file1="er-301/unit-anatomy/gainbias.png"
+  file1="gainbias.png"
   caption1="An example of a Gain/Bias control is the speed parameter of the Sample Player unit."
-  file2="er-301/unit-anatomy/gain-bias-fader.png"
+  file2="gain-bias-fader.png"
   caption2="The Gain/Bias control shows the bias value on the left fader and the final value (or its range if changing quickly) on the right fader."
-  file3="er-301/unit-anatomy/gain-bias-sub-display.png"
+  file3="gain-bias-sub-display.png"
   caption3="The sub display gives access to the modulation sub-chain and provides a mini-scope view of the signal that is being fed to this control."
 %}
 
@@ -127,16 +111,16 @@ Why 10?  This is the gain necessary to convert the internal signal range back to
 
 {% include gallery.html
   count=3
-  file1="er-301/unit-anatomy/pitch.png"
+  file1="pitch.png"
   caption1="An example of a pitch control is the V/oct parameter on the Sample Player unit."
-  file2="er-301/unit-anatomy/pitch-fader.png"
+  file2="pitch-fader.png"
   caption2="The Pitch control shows the transpose amount on the left fader and the actual resulting pitch (or its range if changing quickly) on the right fader."
-  file3="er-301/unit-anatomy/pitch-sub-display.png"
+  file3="pitch-sub-display.png"
   caption3="The sub display gives access to the modulation sub-chain and provides a mini-scope view of the signal that is being fed to this control."
 %}
 
 {% include pitfall.html
-content="Accurate V/oct tracking is only possible with the calibrated [ABCDx inputs](front-panel#abcdx-input-matrix)"
+content="Accurate V/oct tracking is only possible with the calibrated [ABCDx inputs](/er-301/front-panel#abcdx-input-matrix)"
 %}
 
 ## Comparator
@@ -150,11 +134,11 @@ Refer to the individual unit documentation for details on which behavior is conf
 
 {% include gallery.html
   count=3
-  file1="er-301/unit-anatomy/trigger.png"
+  file1="trigger.png"
   caption1="An example of the Comparator control is the trig parameter of the Sample Player unit."
-  file2="er-301/unit-anatomy/trigger-main-display.png"
+  file2="trigger-main-display.png"
   caption2="The Comparator control's circular display pulses whenever the incoming signal crosses the threshold."
-  file3="er-301/unit-anatomy/trigger-sub-display.png"
+  file3="trigger-sub-display.png"
   caption3="The sub display gives access to the modulation sub-chain and provides a mini-scope view of the signal that is being fed to this control."
 %}
 
@@ -162,7 +146,7 @@ Refer to the individual unit documentation for details on which behavior is conf
 This control is used when modulation is not needed.  It is designed for set-and-forget type parameters.  When this kind of control is highlighted the sub-display will show a scope that portrays the output signal of the unit.
 
 {% include figure.html
-  file="er-301/unit-anatomy/fader.png"
+  file="fader.png"
   caption="An example of the simple fader control is the fade parameter of the Sample Player unit."
 %}
 
@@ -170,7 +154,7 @@ This control is used when modulation is not needed.  It is designed for set-and-
 This control is used to select an option from a list of choices.
 
 {% include figure.html
-  file="er-301/unit-anatomy/option.png"
+  file="option.png"
   caption="An example of the option control is the type parameter of the Limiter unit."
 %}
 

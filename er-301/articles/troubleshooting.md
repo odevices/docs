@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Troubleshooting
-parent: Admin
+parent: Articles
 grand_parent: ER-301
-nav_order: 11
 ---
 
 <details open markdown="block">
@@ -23,7 +22,7 @@ Most likely CPU usage is spiking over 95% but too briefly to show on the CPU loa
 
 ## My ER-301 keeps rebooting repeatedly 
 
-A reboot loop means that your PSU is not providing enough [power](power) to your ER-301.
+A reboot loop means that your PSU is not providing enough [power](/er-301/behind-panel/power) to your ER-301.
 
 ## I hear hum or digital noise 
 

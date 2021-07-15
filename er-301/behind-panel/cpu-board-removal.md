@@ -3,7 +3,6 @@ layout: default
 title: CPU Board Removal
 parent: Behind the Panel
 grand_parent: ER-301
-nav_order: 9
 ---
 
 # The Tool (ザ・道具） 
@@ -12,7 +11,7 @@ You will need something to insert between the CPU board and the main board that 
 まず、竹串（長さ＝１５ｃｍ）の５本をセロテープで巻いて道具を作ります。
 
 {% include figure.html
-file="er-301/maintenance/cpu-board-removal-tool.jpg"
+file="cpu-board-removal-tool.jpg"
 %}
 
 # Step 1 
@@ -21,7 +20,7 @@ Remove the rear SD card so that it does not get in the way and insert your lever
 そして、左辺（入れやすいほう）から道具をＣＰＵボードと主ボードの間に１－２ｃｍまで入れて、上に優しくゆっくり引きます。コネクターに１－２ｍｍの隙間が開けてきたら、右辺に進んでください。
 
 {% include figure.html
-file="er-301/maintenance/cpu-board-removal-step1.jpg"
+file="cpu-board-removal-step1.jpg"
 %}
 
 # Step 2 
@@ -30,7 +29,7 @@ Now do the same thing from the opposite side, opening the connector on this side
 右辺から道具をＣＰＵボードと主ボードの間に１－２ｃｍまで入れて、上に優しくゆっくり引きます。１－２ｍｍの隙間が開けてきたら、左辺に戻りさらに隙間を道具で空け、交互に徐々に上げていきます。
 
 {% include figure.html
-file="er-301/maintenance/cpu-board-removal-step2.jpg"
+file="cpu-board-removal-step2.jpg"
 %}
 
 # Repeat 1 & 2 
@@ -39,7 +38,7 @@ Go back to the first side, and open the gap a little bit wider.  Repeat these st
 注意しながら、丁寧に作業することで、隙間はどんどん開けていきます。
 
 {% include figure.html
-file="er-301/maintenance/cpu-board-removal-stepN.jpg"
+file="cpu-board-removal-stepN.jpg"
 %}
 
 # Done 
@@ -48,5 +47,5 @@ At some point, the connectors will completely and safely disengage.  Resist the 
 手で引っ張らないでください。完全に外すまで、道具を使ってください。
 
 {% include figure.html
-file="er-301/maintenance/cpu-board-removal-done.jpg"
+file="cpu-board-removal-done.jpg"
 %}

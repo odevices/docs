@@ -3,15 +3,14 @@ layout: default
 title: CPU Load
 parent: Admin
 grand_parent: ER-301
-nav_order: 6
 ---
 
 You can query the CPU load at any time from the admin menu.
 
 {% include gallery.html
 count=2
-file1="er-301/admin-maintenance.png"
-file2="er-301/cpu-load.png"
+file1="admin-maintenance.png"
+file2="cpu-load.png"
 %}
 
 CPU load will ''usually'' be the sum of the fixed costs of all units in use (plus ~3% of overhead).  A unit’s cost does not depend on where you insert it except to the extent that mono vs stereo might affect it.  In general expect, a stereo unit's cost to be from 50% to 100% more than its mono version. The number of (local and global) connections does not matter.

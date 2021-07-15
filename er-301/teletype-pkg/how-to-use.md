@@ -18,7 +18,7 @@ nav_order: 1
 # Required Hardware Connections 
 
 * First determine your [board revision](/er-301/behind-panel/revisions).
-* If you have an ER-301 with board revision 7 (i.e. ER-301 manufactured before June 2018), then please go [here](/er-301/behind-panel/i2c-rev7).
+* If you have an ER-301 with board revision 7 (i.e. ER-301 manufactured before June 2018), then please go [here](/er-301/behind-panel/rev7/i2c).
 * Otherwise go [here](/er-301/behind-panel/i2c).
 
 # Current Status 
@@ -100,8 +100,8 @@ You can enable teletype i2c communication by navigating to Admin > Package Manag
 
 {% include gallery.html
 count=2
-file1="er-301/teletype/package-manager.png"
-file2="er-301/teletype/config.png"
+file1="package-manager.png"
+file2="config.png"
 %}
 
 Here you can set the ER-301 i2c address.  If you have one ER-301, then use 0x31.  Use 0x32 for your second ER-301 and use 0x33 for your third (!) ER-301.  This way the teletype will automatically route your commands in the following manner: 

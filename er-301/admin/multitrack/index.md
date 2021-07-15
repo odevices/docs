@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Slice Editor
-parent: Samples
+title: Multitrack Recorder
+parent: Admin
 grand_parent: ER-301
 ---

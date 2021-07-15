@@ -3,7 +3,6 @@ layout: default
 title: Rear SD Card
 parent: Behind the Panel
 grand_parent: ER-301
-nav_order: 8
 ---
 
 The rear SD card holds the firmware, bootloaders, and some system configuration data.  The contents of the SD card are completely managed by the system.  Therefore, under normal circumstances, the user will not need to touch these files.

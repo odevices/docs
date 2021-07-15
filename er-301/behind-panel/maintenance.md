@@ -3,7 +3,6 @@ layout: default
 title: Maintenance and Repair
 parent: Behind the Panel
 grand_parent: ER-301
-nav_order: 8
 ---
 
 <details open markdown="block">
@@ -21,7 +20,7 @@ content="The ER-301 contains sensitive electronics, especially on its CPU board.
 
 # Replacing the CPU Board
 {% include figure.html
-file="er-301/maintenance/AM3352-SOM-2.jpg"
+file="AM3352-SOM-2.jpg"
 caption="This is the CPU board on the back of the ER-301.  It holds the CPU, RAM and the SD card which contains the firmware.  This CPU board is manufactured by another company called Olimex."
 %}
 
@@ -35,7 +34,7 @@ Sometimes it is necessary to replace the CPU board on the ER-301.  This process 
 # Removing the panel
 You will need...
 {% include figure.html
-file="er-301/maintenance/panel-tools.jpg"
+file="panel-tools.jpg"
 %}
 1. a 1.5mm allen wrench for the knob's set screw.
 1. a 12mm socket wrench for the nut on the encoder bushing.  An adjustable wrench is fine for this also.
@@ -50,7 +49,7 @@ Some things to watch out for according to users:
 If you feel confident removing the panel on your ER-301 and replacing button caps, you can try doing it yourself.  The part number for the gray buttons is [D6C10-F1-LFS](https://www.digikey.com/products/en?WT.z_se_ps=1&keywords=D6C10-F1-LFS).  There are other colors available but make sure you order the square type with 1.3N of actuating force:
 
 {% include figure.html
-file="er-301/maintenance/D6C-buttons.png"
+file="D6C-buttons.png"
 %}
 
 I find that prying off the button caps is most conveniently done with a 2mm flathead screwdriver.  Here is what the process looks like:

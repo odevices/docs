@@ -59,6 +59,8 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 exclude: 
+  - Makefile
   - README.md
+  - htmlproofer.log
   - design/
 

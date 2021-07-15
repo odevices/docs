@@ -7,9 +7,9 @@ grand_parent: ER-301
 
 {% include gallery.html
 count=2
-file1="er-301/core/delay.png"
+file1="delay.png"
 caption1="mono version"
-file2="er-301/core/spread-delay.png"
+file2="spread-delay.png"
 caption2="stereo version"
 %}
 

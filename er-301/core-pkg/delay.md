@@ -8,9 +8,9 @@ grand_parent: ER-301
 
 {% include gallery.html
 count=2
-file1="er-301/core/delay.png"
+file1="delay.png"
 caption1="mono version"
-file2="er-301/core/delay-stereo.png"
+file2="delay-stereo.png"
 caption2="stereo version"
 %}
 
@@ -34,7 +34,7 @@ When this unit is placed in a stereo chain, then the delay parameter is split in
 This value determines how much of the audio in the delay line to mix with the delay's input. A value of 0dB means that the old and new are summed together as-is and will eventually cause the contents of the delay line to grow so loud that it will clip when it arrives at the DAC. A value of {\displaystyle -\infty } means that the new material completely replaces the old material in the delay line. Anything less than 0dB will cause the old material to slowly fade away with each (delayed) repeat. The following graph summarizes the number of repeats required to fade to 10% of the original captured amplitude vs the feedback amount:
 
 {% include figure.html 
-file="er-301/core/repeats-vs-feedback.png"
+file="repeats-vs-feedback.png"
 %}
 
 ### wet
@@ -42,5 +42,5 @@ file="er-301/core/repeats-vs-feedback.png"
 This parameter controls the amount of the input signal and of the affected signal which is passed to the output. A value of 1 (i.e. 100% wet) means you will only hear the affected signal. A value of 0 (i.e. 100% dry) means you will only hear the signal received at the unit's input. However, the cross-fade curve is not linear but rather lifted to counteract the tendency for loudness to dip in the center of a linear cross-fade curve. The actual cross-fade curve looks like this:
 
 {% include figure.html 
-file="er-301/core/raised-xfade-law.png"
+file="raised-xfade-law.png"
 %}

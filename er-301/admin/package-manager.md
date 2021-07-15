@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Sample Pool
+title: Package Manager
 parent: Admin
 grand_parent: ER-301
 ---

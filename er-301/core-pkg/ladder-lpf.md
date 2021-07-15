@@ -7,7 +7,7 @@ grand_parent: ER-301
 ---
 
 {% include figure.html 
-file="er-301/core/ladder-lpf.png"
+file="ladder-lpf.png"
 %}
 
 ## Overview

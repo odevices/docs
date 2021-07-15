@@ -25,7 +25,7 @@ The SD card slot on the front of the ER-301 is used to hold all of the data that
 
 ## Mounting and ejecting 
 {% include figure.html
-  file="er-301/storage-switch-eject.jpg"
+  file="storage-switch-eject.jpg"
   caption="You can remove or insert the SD card when the **safe** LED is lit."
 %}
 The STORAGE toggle switch next to the SD card slot can be used to safely eject and mount a card.  
@@ -64,11 +64,11 @@ At anytime and anywhere, pressing SHIFT+M1 (silkscreened as QUICKSAVE) will brin
 
 {% include gallery.html
   count=3
-  file1="er-301/quicksave-screen.png"
+  file1="quicksave-screen.png"
   caption1="The quicksave screen shows 24 slots where you can store and recall the state of the ER-301."
-  file2="er-301/renaming-quicksave.png"
+  file2="renaming-quicksave.png"
   caption2="Renaming a quicksave slot."
-  file3="er-301/renamed-quicksave.png"
+  file3="renamed-quicksave.png"
   caption3="The quicksave slot after renaming."
 %}
 
@@ -85,25 +85,25 @@ Quicksaves are saved to a folder called ```ER-301/sc/quicksaves```.  Inside this
 Quicksaves (in fact **all** presets) are serialized as loadable Lua code which defines a table containing all of the data pertinent to the preset.  Although should never be necessary, with some practice and knowledge of Lua, it is possible to edit these files by hand.
 
 # Chain Presets
-[Chains of units](signal-flow#chains) are stored as chain presets for later recall.  A chain preset consists of:
+[Chains of units](/er-301/chains) are stored as chain presets for later recall.  A chain preset consists of:
 * a list of unit presets (one for each unit in the chain)
-* the [source](signal-flow#source) assignment (if applicable)
+* the [source](/er-301/chains/#source) assignment (if applicable)
 * the location of the focus cursor
 
 You can create a chain preset from any chain by focusing the chain's header to get access to its header menu and pressing **Save (S3)**.  To load a chain preset into a given chain, again focus the chain's header but this time press **Load (S2)** and select a chain preset file via the file browser screen.  The current contents of the chain will be replaced by the units contained within the chain preset.
 
 {% include gallery.html
   count=2
-  file1="er-301/chain-anatomy/mono-chain-header.png"
+  file1="/er-301/chains/mono-chain-header.png"
   caption1="When the chain header is focused a menu of chain operations is shown in the sub-display."
-  file2="er-301/chain-anatomy/chain-presets-folder.png"
+  file2="/er-301/chains/chain-presets-folder.png"
   caption2="Pressing a chain's **Save** command will bring you to this screen where you can specify the destination file for the chain preset."
 %}
 
 Chain presets are saved to a folder called ```ER-301/<version>/presets/chains``` by default but you can save them anywhere you like.  A chain's Load and Save commands will open by default to this folder so it might be easier to keep your chain presets there.  
 
 # Unit Presets
-The complete state of an individual [unit](signal-flow#units) can be stored in and recalled from a unit preset.  A unit preset will persist the following items:
+The complete state of an individual [unit](/er-301/units) can be stored in and recalled from a unit preset.  A unit preset will persist the following items:
 * the values of all parameters
 * fine vs coarse setting of each parameter
 * sub-chains of parameters that have them
@@ -112,9 +112,9 @@ The complete state of an individual [unit](signal-flow#units) can be stored in a
 
 {% include gallery.html
   count=2
-  file1="er-301/unit-anatomy/unit-menu.png"
+  file1="/er-301/units/unit-menu.png"
   caption1="The preset load/save commands are located in a unit's extended menu, accessed by focusing the unit's header."
-  file2="er-301/unit-anatomy/save-unit.png"
+  file2="/er-301/units/save-unit.png"
   caption2="Pressing **Save Preset** will bring you to this screen where you can specify the destination file for the unit preset."
 %}
 
@@ -125,9 +125,9 @@ You can save and later recall all of your global chains using global chain prese
 
 {% include gallery.html
   count=2
-  file1="er-301/global-chains-menu.png"
+  file1="/er-301/admin/globals/menu.png"
   caption1="Hovering over (or focusing) the area all the way to the left, will reveal 3 commands in the sub display."
-  file2="er-301/save-global-chains.png"
+  file2="/er-301/admin/globals/save.png"
   caption2="Activating the **Save Chains** command will bring us to this screen where we can choose an existing destination file or create a new one."
 %}
 
@@ -138,8 +138,8 @@ You can save and later recall all of your global chains using global chain prese
 # Multitrack Recorder Presets
 {% include gallery.html
   count=2
-  file1="er-301/recorder-screen.png"
+  file1="/er-301/admin/multitrack/screen.png"
   caption1="The Multitrack recorder has its load/save preset commands available in the sub display when you are configuring its channels."
-  file2="er-301/load-recorder-preset.png"
+  file2="/er-301/admin/multitrack/load-preset.png"
   caption2="Pressing the **Load Preset** button will bring you to this screen where you can select a previously saved configuration preset."
 %}

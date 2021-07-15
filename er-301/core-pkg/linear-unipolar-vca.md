@@ -8,9 +8,9 @@ grand_parent: ER-301
 
 {% include gallery.html 
 count=2
-file1="er-301/core/linear-unipolar-vca.png"
+file1="linear-unipolar-vca.png"
 caption1="mono version"
-file2="er-301/core/linear-unipolar-vca-stereo.png"
+file2="linear-unipolar-vca-stereo.png"
 caption2="stereo version"
 %}
 
@@ -42,7 +42,7 @@ The unit's input is multiplied by the **rectified** value of this control.  The 
 Pans the signal between the left and right channels according to the following (linear) panning law:
 
 {% include figure.html 
-file="er-301/core/pan-law.png"
+file="/er-301/pan-law.png"
 %}
 
 Some examples:

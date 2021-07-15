@@ -7,7 +7,7 @@ nav_order: 1
 
 {% include figure.html 
   width="100%"
-  file="er-301/panel-annotated.png" 
+  file="panel-annotated.png" 
 %}
 
 <details open markdown="block">
@@ -30,7 +30,7 @@ Also, if you wish to make your own custom panel you can download the panel desig
 
 # The Knob
 {% include figure.html
-  file="er-301/knob.png"
+  file="knob.png"
   caption="A context-sensitive knob to handle all parameter adjustments."
 %} 
 The Knob is an endless encoder with a resolution of 100 pulses per revolution and a very long-life of more than 1 million revolutions.  The two main purposes of the Knob are scrolling through the UI and setting parameters.  The Knob's focus is always indicated by the dancing cursor which depending on the situation might be selecting something in the Main Display or the Sub Display.
@@ -44,7 +44,7 @@ There are two OLED displays on the ER-301: a Main Display and a Sub Display.  Th
 
 # Soft Buttons 
 {% include figure.html
-  file="er-301/soft-buttons.png"
+  file="soft-buttons.png"
   caption="The ER-301 has 9 soft buttons: M1-M6 and S1-S3. Each soft button is associated with a vertical column on the display above it."
 %}
 
@@ -60,12 +60,12 @@ The result of pressing a soft button will depend on the context but in a sensibl
 
 # Hard Buttons 
 {% include figure.html
-  file="er-301/hard-buttons.png"
+  file="hard-buttons.png"
   caption="The ER-301 has 6 hard buttons whose basic functions are the same regardless of the UI context."
 %}
 
 ## KNOBMODE
-{% include image.html file="er-301/fine-coarse-button.png" %}
+{% include image.html file="fine-coarse-button.png" %}
 This button is called the KNOBMODE button.  It has 2 purposes depending on the context.
 
 **When a parameter control is focused**: This button is used to toggle knob sensitivity between fine and coarse settings.  
@@ -74,35 +74,35 @@ This button is called the KNOBMODE button.  It has 2 purposes depending on the c
 <br clear=all>
 
 ## CANCEL
-{% include image.html file="er-301/cancel-button.png" %}
+{% include image.html file="cancel-button.png" %}
 Used to abort an action. In general, it is the opposite of the ENTER button.  Also, pressing CANCEL right after changing the value of a parameter with the knob, will return the parameter to its original value.
 <br clear=all>
 
 ## HOME
-{% include image.html file="er-301/home-button.png" %}
+{% include image.html file="home-button.png" %}
 The HOME button reverts encoder focus to the "beginning" or "top" of the construct that is currently focused.  For example, if you are focused inside a unit then pressing the HOME button will shift the focus to the unit's header area.  If you press HOME again, then the focus shifts to the chain's header area, and so on.  Holding SHIFT while pressing the HOME button will zero out a focused parameter.
 <br clear=all>
 
 ## ENTER
-{% include image.html file="er-301/enter-button.png" %}
+{% include image.html file="enter-button.png" %}
 The ENTER button confirms a selection or operation.  This is not to be confused with focusing an item which is always done via the soft buttons.  For example, choosing a sample to load in the file browser or, during unit renaming, committing text that you just typed as the new name of a unit.
 
 The ENTER button can also be used to cycle through the available views of a highlighted unit or control.
 <br clear=all>
 
 ## UP
-{% include image.html file="er-301/up-button.png" %}
+{% include image.html file="up-button.png" %}
 Whenever you have focused an item (for manipulation) or dived into a new area (such as a modulation chain of a unit) you can return to the previous focus by pressing this UP button.  It is very much like the BACK button a modern web browser.
 <br clear=all>
 
 ## SHIFT
-{% include image.html file="er-301/shift-button.png" %}
+{% include image.html file="shift-button.png" %}
 The SHIFT button is used to access alternate functions that some buttons have.  These will be noted as they come up in the documentation.
 <br clear=all>
 
 # Channel Buttons 
 {% include figure.html 
-  file="er-301/channel-buttons.png"
+  file="channel-buttons.png"
   caption="There are 4 channel buttons, one for each output channel."
 %}
 Pressing a Channel button (while in User mode) focuses the corresponding channel.  The currently focused channel is indicated by one of the orange LEDs next to each Channel button. This will also focus the output chain associated with the selected channel when in edit mode.  If the output chain is mono (i.e. the focused channel is not linked with another channel) then this is the only way to focus that chain.  Otherwise, if the processing chain is stereo (which means the focused channel is linked with a neighboring channel) then pressing either Channel button will show the same processing chain.  Any scopes or meters in the focused chain's GUI will display only the focused channel's signal (particularly relevant for a stereo chain).  
@@ -120,7 +120,7 @@ While holding one channel button down, press the other channel button that you w
 
 # Gx Inputs 
 {% include figure.html 
-  file="er-301/Gx-inputs.png"
+  file="Gx-inputs.png"
   caption="The G1-G4 inputs are unipolar 12-bit inputs designed to accept a wide variety of timing signals."
 %}
 These inputs are designed for "soft gate" signals:
@@ -131,12 +131,12 @@ These inputs are designed for "soft gate" signals:
 You cannot use these inputs for pitch CV because they are not calibrated.
 
 {% include figure.html 
-  file="er-301/plots/Gx-mapping.png"
+  file="Gx-mapping.png"
 %}
 
 # INx Inputs 
 {% include figure.html 
-  file="er-301/INx-inputs.png"
+  file="INx-inputs.png"
   caption="The IN1-IN4 are inputs designed specifically for audio."
 %}
 The jacks labeled IN1 through IN4 are 16-bit inputs sampled at 60kHz with extra anti-aliasing analog filters in front of the ADC for clean and accurate digitization of audio signals.
@@ -148,7 +148,7 @@ The jacks labeled IN1 through IN4 are 16-bit inputs sampled at 60kHz with extra 
 * The full range of each input is mapped internally to a floating-point value between -1 and 1 and values outside of the input range are hard-clipped:
 
 {% include figure.html 
-  file="er-301/plots/INx-mapping.png"
+  file="INx-mapping.png"
 %}
 
 {% include tip.html 
@@ -157,7 +157,7 @@ content="The analog anti-aliasing filters on inputs IN1-IN4 introduce a small am
 
 # OUTx Outputs 
 {% include figure.html 
-  file="er-301/OUTx-outputs.png"
+  file="OUTx-outputs.png"
   caption="The OUT1-OUT4 are 24-bit/96kHz AC-coupled outputs designed for audio."
 %}
 The jacks labeled OUT1 through OUT4 are 24-bit AC-coupled outputs sampled at 48kHz or 96kHz depending on the firmware loaded into the ER-301.
@@ -168,12 +168,12 @@ The jacks labeled OUT1 through OUT4 are 24-bit AC-coupled outputs sampled at 48k
 * Internally, the output is mapped from a floating-point value between -1 and 1 to the full -7V to 7V range.  Values outside of this range are hard-clipped:
 
 {% include figure.html 
-  file="er-301/plots/OUTx-mapping.png"
+  file="OUTx-mapping.png"
 %}
 
 # ABCDx Input Matrix 
 {% include figure.html 
-  file="er-301/ABCD-matrix-inputs.png"
+  file="ABCD-matrix-inputs.png"
   caption="These 12 inputs can each handle a wide variety of bipolar audio-rate modulation signals as well as 1V/oct pitch control."
 %}
 These 12 inputs are all the same with the following properties:
@@ -186,7 +186,7 @@ These 12 inputs are all the same with the following properties:
 * The voltage at each input is digitized and mapped internally to a 32-bit floating-point value that is exactly 0.1x (1/10th) of the voltage value (i.e. 1V => 0.1, 10V => 1.0 and so on):
 
 {% include figure.html 
-  file="er-301/plots/ABCD-mapping.png"
+  file="ABCD-mapping.png"
 %}
 
 {% include tip.html
@@ -215,6 +215,6 @@ The opposite process, mounting an SD card, is achieved by moving the STORAGE swi
 In short, only insert or remove the card while the switch is in the **eject** position.
 
 # SD Card Slot 
-(See [Persistence](persistence) for more details.)
+(See [Persistence](/er-301/persistence) for more details.)
 
 The SD card slot on the front of the ER-301 is used to hold all of the data that belongs to the user such as samples and presets.  There is another SD card slot on the back of the ER-301 that is for system files and firmware.

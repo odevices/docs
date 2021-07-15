@@ -1,5 +1,6 @@
 _site
 design
+htmlproofer.log
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
