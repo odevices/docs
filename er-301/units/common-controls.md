@@ -3,7 +3,6 @@ layout: default
 title: Common Controls
 grand_parent: ER-301
 parent: Units
-nav_order: 1
 ---
 
 # {{page.title}}

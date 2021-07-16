@@ -2,7 +2,6 @@
 layout: default
 title: Front Panel
 parent: ER-301
-nav_order: 1
 ---
 
 {% include figure.html 

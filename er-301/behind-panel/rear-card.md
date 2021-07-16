@@ -17,7 +17,11 @@ The rear SD card holds the firmware, bootloaders, and some system configuration 
 </details>
 
 # Manual firmware update
-You can also accomplish a firmware update by directly copying the system files to the rear SD card using your computer.  You would use this method when you are unable to boot into the ER-301's operating system or you are unable to get the ER-301 to recognize (i.e. mount) your front SD card.
+You can accomplish a firmware update by directly copying the system files to the rear SD card using your computer.  
+
+{% include pitfall.html
+content="You would only use this method if the builtin [Firmware Updater](/er-301/admin/firmware) fails for some reason."
+%}
 
 1. Power down your case and remove the ER-301 so that you can get at the rear SD card.
 1. Remove the rear SD card and take it over to your computer.

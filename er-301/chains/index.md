@@ -3,7 +3,6 @@ layout: default
 title: Chains
 parent: ER-301
 has_children: true
-nav_order: 2
 ---
 
 <details open markdown="block">

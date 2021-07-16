@@ -2,7 +2,6 @@
 layout: default
 title: Persistence
 parent: ER-301
-nav_order: 3
 ---
 
 Here we discuss the various mechanisms by which the ER-301 helps you save and recall your creations.
