@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: draft
 title: CPU Board Removal
 parent: Behind the Panel
 grand_parent: ER-301

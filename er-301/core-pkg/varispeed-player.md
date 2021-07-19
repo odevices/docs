@@ -1,5 +1,5 @@
 ---
-layout: unit
+layout: draft-unit
 title: Variable Speed Player
 subtitle: Sample player for variable-rate and sliced playback.
 parent: Core Package

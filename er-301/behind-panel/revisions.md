@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: draft
 title: Hardware Revisions
 parent: Behind the Panel
 grand_parent: ER-301

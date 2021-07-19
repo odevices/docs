@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: draft
 title: Screenshots
 parent: Admin
 grand_parent: ER-301

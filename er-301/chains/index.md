@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: draft
 title: Chains
 parent: ER-301
-has_children: true
 ---
 
 <details open markdown="block">

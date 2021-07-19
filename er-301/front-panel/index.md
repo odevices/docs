@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: draft
 title: Front Panel
 parent: ER-301
 ---

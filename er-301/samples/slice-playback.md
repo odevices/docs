@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: draft
 title: Slice Playback
 parent: Samples
 grand_parent: ER-301

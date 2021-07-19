@@ -1,5 +1,5 @@
 ---
-layout: unit
+layout: draft-unit
 title: SC.TR
 subtitle: Renders the teletype's SC.TR command.
 parent: Teletype Package

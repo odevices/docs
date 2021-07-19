@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: draft
 title: How to use
 parent: Teletype Package
 grand_parent: ER-301
@@ -111,7 +111,3 @@ Here you can set the ER-301 i2c address.  If you have one ER-301, then use 0x31.
 |1-100|1-100|0x31|
 |101-200|1-100|0x32|
 |201-300|1-100|0x33|
-
-{% include pitfall.html
-content="If you are using older ER-301 firmware (prior to v0.4), you might see i2c addresses starting with 0xB.  These addresses conflict with other devices.  Please stick with the 0x3 addresses."
-%}

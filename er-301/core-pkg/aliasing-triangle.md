@@ -1,5 +1,5 @@
 ---
-layout: unit
+layout: draft-unit
 title: Aliasing Triangle
 subtitle: A triangle oscillator.
 parent: Core Package

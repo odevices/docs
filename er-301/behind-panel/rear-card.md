@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: draft
 title: Rear SD Card
 parent: Behind the Panel
 grand_parent: ER-301

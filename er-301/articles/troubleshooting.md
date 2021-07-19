@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: draft
 title: Troubleshooting
 parent: Articles
 grand_parent: ER-301

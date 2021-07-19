@@ -1,5 +1,5 @@
 ---
-layout: unit
+layout: draft-unit
 title: Linear Bipolar VCA
 subtitle: Also known as a ring mod.
 parent: Core Package

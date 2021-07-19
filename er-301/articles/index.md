@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: draft
 title: Articles
 parent: ER-301
 has_children: true

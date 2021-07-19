@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: draft
 title: Teletype Package
 parent: ER-301
 has_children: true

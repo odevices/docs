@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: draft
 title: Selection via CV/Gate
 parent: Articles
 grand_parent: ER-301

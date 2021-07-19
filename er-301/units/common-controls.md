@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: draft
 title: Common Controls
 grand_parent: ER-301
 parent: Units

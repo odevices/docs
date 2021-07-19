@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: draft
 title: Sample Commands
 parent: Samples
 grand_parent: ER-301

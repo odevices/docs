@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: draft
 title: CPU Load
 parent: Admin
 grand_parent: ER-301
