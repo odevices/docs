@@ -14,8 +14,6 @@ grand_parent: ER-301
 {:toc}
 </details>
 
-# Troubleshooting 
-
 ## I hear clicks in the audio 
 
 Most likely CPU usage is spiking over 95% but too briefly to show on the CPU load screen. The CPU load screen samples the load once per second so it can easily miss short spikes in CPU usage. I've tried to build all units so that their CPU usage is as constant as possible, but there are exceptions such as Manual Grains. That unit's CPU usage will depend on the number of simultaneous grains playing at any particular moment (from 0 to 16) which will depend on the interaction of grain duration and grain triggering.

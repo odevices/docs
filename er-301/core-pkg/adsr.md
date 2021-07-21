@@ -1,7 +1,7 @@
 ---
 layout: draft-unit
 title: ADSR
-subtitle: A traditional envelope generator.
+subtitle: A traditional 4-stage envelope generator.
 parent: Core Package
 grand_parent: ER-301
 ---
