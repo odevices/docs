@@ -26,7 +26,7 @@ caption="This is the CPU board on the back of the ER-301.  It holds the CPU, RAM
 
 Sometimes it is necessary to replace the CPU board on the ER-301.  This process is easy and safe as long as you take your time, take basic anti-static precautions and do not force anything.
 
-1. Purchase a replacement CPU board (AM3352-SOM) from Olimex for about 37EUR: https://www.olimex.com/Products/SOM/AM335X/AM3352-SOM/
+1. Purchase a replacement CPU board (AM3352-SOM) from [Olimex](https://www.olimex.com/Products/SOM/AM335X/AM3352-SOM/) for about 37EUR.
 1. Remove the rear SD from the old CPU board and insert it in the SD slot on the new CPU board.
 1. Carefully remove the old CPU board by prying up each side little-by-little.  **Do NOT try to forcefully pull it off all at once.**  [Here](cpu-board-removal) is a step-by-step tutorial on how to remove the CPU board.
 1. Carefully align the pins and push on the new CPU board.  It is very important that you use both hands, pressing ONLY on all 4 corners evenly.  Do not push on the center of the board and especially do not push on the area with the Olimex logo.  Underneath the logo is the RAM chip which might be damaged if you press here.
