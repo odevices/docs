@@ -5,6 +5,11 @@ parent: Behind the Panel
 grand_parent: ER-301
 ---
 
+{% include tip.html
+content="Since the ER-301 does not ship with i2c cables, you will need to make your own.  Here is some info on how to DIY your own cables: [DIY i2c cables @ LINES forum](https://llllllll.co/t/diy-i2c-cables/12833?u=odevices)"
+%}
+
+
 The first few runs of the ER-301 did not have a dedicated i2c header.  Instead users would perform a small hardware modification (described here) so that they could use the exposed UART header instead.  
 
 # Connecting the Teletype to the ER-301 
