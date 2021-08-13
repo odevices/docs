@@ -23,3 +23,7 @@ Note that the connections are all one-to-one with no crossovers.
 width="100%"
 file="i2c-wiring.jpg"
 %}
+
+{% include tip.html
+content="Since the ER-301 does not ship with i2c cables, you will need to make your own or acquire them.  Here is some info on how to DIY your own cables: [DIY i2c cables @ LINES forum](https://llllllll.co/t/diy-i2c-cables/12833?u=odevices)"
+%}
