@@ -5,6 +5,10 @@ parent: Behind the Panel
 grand_parent: ER-301
 ---
 
+# What is I2C?
+
+I2C is a hardware bus specification that allows 2 or more integrated circuits to communicate over two wires plus ground.  I2C was designed for *closed systems* where the electrical characteristics of all bus connections and participants are known beforehand.  As an end user, this means you should acknowledge that I2C is not a hardened consumer-oriented technology and all use of I2C to connect the ER-301 to other devices is *at your own risk*.  Using I2C exposes sensitive circuitry of the ER-301 to ESD risks so precautions must be taken when designing your I2C-connected system.  It is best to think of it as a form of community-supported factory-enabled hacking.
+
 # Connecting the Teletype to the ER-301 
 
 {% include pitfall.html
