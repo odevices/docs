@@ -10,4 +10,5 @@ nav_order: 2
 I'm in the process of migrating the ER-102 manual to this markdown-based format.
 
 * [ER-102 User Manual (v2.04)](/images/er-102-manual-v2.04.pdf)
-* [Default CONFIG.INI](default-config)
+* [Default CONFIG.INI](https://github.com/odevices/er-102/blob/main/config/default-config.ini)
+* [Factory-installed scales](https://github.com/odevices/er-102/tree/main/voltage-tables/python/chromatic)
