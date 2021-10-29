@@ -1,6 +1,6 @@
 ---
 layout: draft
-title: Setup
+title: Teletype Setup
 parent: Teletype Package
 grand_parent: ER-301
 nav_order: 1
