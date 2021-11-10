@@ -21,7 +21,7 @@ $$\text{s} = \text{s0} * 2 ^{\frac{x}{1200}}$$
 
 where 
 
-* $$x$$ is the value of this control
+* $$x$$ is the value of this control (in cents)
 * $$s0$$ is base speed as set via the speed control
 * $$s$$ is the playback speed
 

@@ -18,7 +18,7 @@ $$\text{f} = \text{f0} * 2 ^{\frac{x}{1200}}$$
 
 where 
 
-* $$x$$ is the value of this control
+* $$x$$ is the value of this control (in cents)
 * $$f0$$ is the base frequency (set via the f0 control)
 * $$f$$ is the final output frequency of the oscillator
 
