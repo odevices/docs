@@ -78,8 +78,8 @@ On the other hand, pressing clear (S3) will clear any existing source assignment
 Units can be inserted at any position in a chain by placing the cursor at the desired location (such as the beginning/ending of the chain, or, between two units) and pressing the insert (S3) button.  This will bring you to the unit selection menu where you can choose from a growing collection of units:
 
 * [Builtin Units](/er-301/builtins) (built into the firmware)
-* [Core Package](/er-301/core-pkg) (provided by O`|D)
-* [Teletype Package](/er-301/teletype-pkg) (provided by O`|D)
+* [Core Package](/er-301/core-pkg) (provided by O\|D)
+* [Teletype Package](/er-301/teletype-pkg) (provided by O\|D)
 * [ER-301 hub](https://er301-hub.netlify.app/) (created by users)
 
 {% include gallery.html
