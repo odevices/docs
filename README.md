@@ -20,7 +20,7 @@ bundle exec jekyll serve --host 0.0.0.0 --incremental
 
 Your development site will be served locally from [http://localhost:4000](http://localhost:4000).
 
-Alternatively, if you want to be able to access the dev server from another machine:
+Alternatively, if you want to be able to access the dev server from another machine on your LAN:
 
 ```bash
 # open the firewall to tcp connections on port 4000
