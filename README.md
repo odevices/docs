@@ -15,7 +15,7 @@ bundle install
 ### Start the development web server
 
 ```bash
-bundle exec jekyll serve --host 0.0.0.0
+bundle exec jekyll serve --host 0.0.0.0 --incremental
 ```
 
 Your development site will be served locally from [http://localhost:4000](http://localhost:4000).
@@ -26,7 +26,7 @@ Alternatively, if you want to be able to access the dev server from another mach
 # open the firewall to tcp connections on port 4000
 sudo ufw allow 4000/tcp
 # run the server
-bundle exec jekyll serve --host `hostname`
+bundle exec jekyll serve --host `hostname` --incremental
 # close the firewall
 sudo ufw delete allow 4000/tcp
 ```
