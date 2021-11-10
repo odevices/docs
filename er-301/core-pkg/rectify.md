@@ -1,7 +1,7 @@
 ---
 layout: draft-unit
 title: Rectify
-subtitle: 
+subtitle: Converting bipolar signals to unipolar signals.
 parent: Core Package
 grand_parent: ER-301
 ---
