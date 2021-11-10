@@ -22,7 +22,7 @@ Some applications are:
 * Use CV (such as an LFO) to '''scan a sample''' as an interpolated look-up table (i.e. the name-sake application).
 
 {% include pitfall.html
-content="Don’t be fooled! This unit is not a wavetable synthesizer.  There is no phase accumulator.  Instead the input signal is used to directly lookup output values from a lookup table.  The lookup table just happens to be loaded from a sample."
+content="Don’t be fooled! This unit is not a wavetable synthesizer, for that see the [Single Cycle Unit](single-cycle).  There is no frequency-controlled phase accumulator here.  Instead the input signal is used to directly lookup output values from a lookup table.  The lookup table just happens to be loaded from a sample."
 %}
 
 {% include pitfall.html
