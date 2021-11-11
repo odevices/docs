@@ -61,6 +61,7 @@ plugins:
 exclude: 
   - Makefile
   - README.md
+  - NOTES.md
   - htmlproofer.log
   - design/
 

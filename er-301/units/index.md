@@ -3,6 +3,7 @@ layout: draft
 title: Units
 parent: ER-301
 has_children: true
+nav_order: 4
 ---
 
 <details open markdown="block">

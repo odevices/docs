@@ -2,6 +2,7 @@
 layout: draft
 title: Signal Flow
 parent: ER-301
+nav_order: 2
 ---
 
 # Signal Flow

@@ -2,6 +2,7 @@
 layout: draft
 title: Chains
 parent: ER-301
+nav_order: 3
 ---
 
 <details open markdown="block">
