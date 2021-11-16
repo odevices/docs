@@ -3,7 +3,7 @@
 
 <div style="display:flex;flex-wrap:wrap;margin-top:20px;margin-bottom:20px;">
 
-  <div style="width:{{ ply | plus: 0 }}px;">
+  <div style="height:120px;width:{{ ply | plus: 0 }}px;">
     <div style="position:relative;">
       <object style="position:absolute;left:0px;" data="/images/er-301/unit-anatomy/header-control.svg" width="{{ ply }}"></object>
     </div>
@@ -33,7 +33,7 @@
       {% else %}
       {% assign controlBorder = "/images/er-301/unit-anatomy/middle-control.svg" %}
     {% endcase %}
-    <div style="width:{{ ply | plus: 0 }}px;">
+    <div style="height:120px;width:{{ ply | plus: 0 }}px;">
       <div style="position:relative;">
         <object style="position:absolute;left:0px;" data="{{ controlContent }}" width="{{ ply }}"></object>
         <object style="position:absolute;left:0px;" data="{{ controlBorder }}" width="{{ ply }}"></object>
@@ -45,4 +45,3 @@
   {% endfor %} 
 
 </div>
-<br clear=all>
