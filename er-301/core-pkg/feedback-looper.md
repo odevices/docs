@@ -17,7 +17,7 @@ pname3 = "punch"
 ptype3 = "comparator"
 pname4 = "start"
 ptype4 = "gainbias"
-pname5 = "feedback"
+pname5 = "fdbk"
 ptype5 = "gainbias"
 pname6 = "wet"
 ptype6 = "gainbias"
@@ -56,27 +56,27 @@ Also, notice that the crossfade curves (denoted XFADE in the formula above) used
 ## Parameters
 
 ### reset
-{% include comparator-control.html %}
+{% include comparator-control.html summary = "Move the play/record head to the start position." %}
 
 A rising edge at this parameter will cause the head to reset to the start position as set by the [start](#start) parameter.  Typically, the start parameter will be zero in which case the head will reset to the beginning of the buffer.
 
 ### engage
-{% include comparator-control.html %}
+{% include comparator-control.html summary = "The play/record head advances when engaged." %}
 
 The head advances forward when engaged and does not advance when it is not engaged.  This parameter supports both momentary and latching behaviors.  If the Engage Latch setting is 'on' then this setting behaves like a toggle such that a rising edge engages the head and the following rising edge disengages it.  If the Engage Latch setting is 'off' then the head is only engaged while receiving a high value.
 
 ### punch
-{% include comparator-control.html %}
+{% include comparator-control.html summary = "Recording when punched in, not recording when punched out." %}
 
 This parameter is used to punch in or out when recording.  It supports both momentary and latching behaviors.  If the Punch Latch setting is 'on' then this setting behaves like a toggle such that a rising edge punches in and the following rising edge punches out.  If the Punch Latch setting is 'off' then the unit is punched in only while this parameter is receiving a high value.
 
 ### start
-{% include gainbias-control.html %}
+{% include gainbias-control.html summary = "Sets the reset position." %}
 
 This parameter determines where in the loop buffer the head will reset.  The position is proportional to the total buffer length so that 0 means the beginning of the buffer, 1 means the end, 0.5 means the middle, and so on.  Negative values are supported and wrap around to the end of the buffer so that -0.25 is the same as 3/4 of the way into the buffer.
 
-### feedback
-{% include gainbias-control.html %}
+### fdbk
+{% include gainbias-control.html summary = "Amount of feedback." %}
 
 This value determines how much of the original audio to keep when recording (i.e. punched in).  A value of 1.0 means that the old and new are summed together as-is and will eventually cause the contents of the buffer to be so loud that it will clip when it arrives at the DAC.  A value of 0.0 means that the new material completely replaces the old material.  Anything less than 1.0 will cause the old material to slowly fade away with each recording pass.  
 

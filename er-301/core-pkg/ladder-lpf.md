@@ -6,8 +6,15 @@ parent: Core Package
 grand_parent: ER-301
 ---
 
-{% include figure.html 
-file="ladder-lpf.png"
+{% include unit-diagram.html 
+title="Ladder LPF"
+pcount = 3
+pname1 = "V/oct"
+ptype1 = "gainbias"
+pname2 = "f0"
+ptype2 = "gainbias"
+pname3 = "Q"
+ptype3 = "gainbias"
 %}
 
 ## Overview
@@ -17,9 +24,11 @@ Frequencies above the cutoff are attenuated while leaving the frequencies below 
 
 This filter will resonate at high values of Q.
 
-{% include filter-controls.md %}
+## Parameters
 
-## Special Controls
+{% include transpose-control.md %}
+
+{% include f0-control.md %}
 
 ### Q
 {% include gainbias-control.html %}

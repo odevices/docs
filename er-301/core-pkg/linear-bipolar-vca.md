@@ -6,12 +6,22 @@ parent: Core Package
 grand_parent: ER-301
 ---
 
-{% include gallery.html 
-count=2
-file1="linear-bipolar-vca.png"
-caption1="mono version"
-file2="linear-bipolar-vca-stereo.png"
-caption2="stereo version"
+{% include unit-diagram.html 
+title="Linear Bipolar VCA (mono)"
+pcount = 1
+pname1 = "level"
+ptype1 = "gainbias"
+caption = "Mono version."
+%}
+
+{% include unit-diagram.html 
+title="Linear Bipolar VCA (stereo)"
+pcount = 2
+pname1 = "level"
+ptype1 = "gainbias"
+pname2 = "pan"
+ptype2 = "gainbias"
+caption = "Stereo version."
 %}
 
 ## Overview

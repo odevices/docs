@@ -10,7 +10,7 @@ parent: Units
 The following controls appear frequently amongst many units.
 
 ## V/oct
-{% include pitch-control.html %}
+{% include pitch-control.html summary = "Transpose fundamental by an amount in cents." %}
 
 This parameter is used to transpose the base frequency up or down via a pitch CV (i.e. a signal that is calibrated to 1V/oct, typically one of the inputs from the ABCD matrix). In other words,
 
@@ -29,7 +29,7 @@ $$220\text{Hz} = 55\text{Hz} * 2 ^{\frac{2400}{1200}}$$
 Modulating this parameter corresponds to exponential FM.
 
 ## f0
-{% include gainbias-control.html %}
+{% include gainbias-control.html summary = "Set the fundamental (cutoff) frequency in Hz." %}
 
 This parameter sets the fundamental frequency that is subsequently transposed by the V/oct parameter. Modulating this parameter corresponds to (thru-zero) linear FM.
 

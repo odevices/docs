@@ -1,47 +1,58 @@
 
 {% assign ply = include.ply | default: 64 %}
+{% assign height = include.height | default: 100 %}
 
-<div style="display:flex;flex-wrap:wrap;margin-top:20px;margin-bottom:20px;">
+<div style="display:block;margin-top:1cm;margin-bottom:1cm;margin-left:auto;margin-right:auto;">
 
-  <div style="height:120px;width:{{ ply | plus: 0 }}px;">
-    <div style="position:relative;">
-      <object style="position:absolute;left:0px;" data="/images/er-301/unit-anatomy/header-control.svg" width="{{ ply }}"></object>
+  <div style="display:flex;flex-wrap:wrap;">
+
+    <div style="height:{{ height }}px;width:{{ ply }}px;position:relative;">
+      
+        <object style="position:absolute;left:0px;" data="/images/er-301/unit-anatomy/header-control.svg" width="{{ ply }}"></object>
+        <div style="margin:0;position:absolute;top:50%;left:50%;-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);font-size:85%;">
+          {{ include.title }}
+        </div>
+      
     </div>
-    <div style="font-size:85%;text-align:center;position:relative;top:25px;">
-      {{ include.title }}
-    </div>
+
+    {% for i in (1..include.pcount) %}
+      {% assign pnameKey = i | prepend: 'pname' %}
+      {% assign ptypeKey = i | prepend: 'ptype' %}
+      {% assign pname = include[pnameKey] %}
+      {% assign ptype = include[ptypeKey] %}
+      {% case ptype %}
+        {% when "comparator" %}
+        {% assign controlContent = "/images/er-301/unit-anatomy/comparator-control.svg" %}
+        {% when "gainbias" %}
+        {% assign controlContent = "/images/er-301/unit-anatomy/gainbias-control.svg" %}
+        {% when "fader" %}
+        {% assign controlContent = "/images/er-301/unit-anatomy/fader-control.svg" %}
+        {% else %}
+        {% assign controlContent = "/images/er-301/unit-anatomy/unknown-control.svg" %}
+      {% endcase %}
+      {% case i %}
+        {% when include.pcount %}
+        {% assign controlBorder = "/images/er-301/unit-anatomy/last-control.svg" %}
+        {% else %}
+        {% assign controlBorder = "/images/er-301/unit-anatomy/middle-control.svg" %}
+      {% endcase %}
+      <div style="height:{{ height }}px;width:{{ ply }}px;">
+        <div style="position:relative;">
+          <object style="position:absolute;left:0px;" data="{{ controlContent }}" width="{{ ply }}"></object>
+          <object style="position:absolute;left:0px;" data="{{ controlBorder }}" width="{{ ply }}"></object>
+        </div>
+        <div style="font-size:85%;text-align:center;position:relative;top:75px;">
+          <a href="#{{ pname | replace: "/", "" | slugify }}">{{ pname }}</a>
+        </div>
+      </div>
+    {% endfor %} 
+
   </div>
 
-  {% for i in (1..include.pcount) %}
-    {% assign pnameKey = i | prepend: 'pname' %}
-    {% assign ptypeKey = i | prepend: 'ptype' %}
-    {% assign pname = include[pnameKey] %}
-    {% assign ptype = include[ptypeKey] %}
-    {% case ptype %}
-      {% when "comparator" %}
-      {% assign controlContent = "/images/er-301/unit-anatomy/comparator-control.svg" %}
-      {% when "gainbias" %}
-      {% assign controlContent = "/images/er-301/unit-anatomy/gainbias-control.svg" %}
-      {% when "fader" %}
-      {% assign controlContent = "/images/er-301/unit-anatomy/fader-control.svg" %}
-      {% else %}
-      {% assign controlContent = "/images/er-301/unit-anatomy/unknown-control.svg" %}
-    {% endcase %}
-    {% case i %}
-      {% when include.pcount %}
-      {% assign controlBorder = "/images/er-301/unit-anatomy/last-control.svg" %}
-      {% else %}
-      {% assign controlBorder = "/images/er-301/unit-anatomy/middle-control.svg" %}
-    {% endcase %}
-    <div style="height:120px;width:{{ ply | plus: 0 }}px;">
-      <div style="position:relative;">
-        <object style="position:absolute;left:0px;" data="{{ controlContent }}" width="{{ ply }}"></object>
-        <object style="position:absolute;left:0px;" data="{{ controlBorder }}" width="{{ ply }}"></object>
-      </div>
-      <div style="font-size:85%;text-align:center;position:relative;top:75px;">
-        <a href="#{{ pname }}">{{ pname }}</a>
-      </div>
-    </div>
-  {% endfor %} 
+  {% if include.caption %}
+  <div style="font-size:85%">
+    {{ include.caption | markdownify }}
+  </div>
+  {% endif %}
 
 </div>
