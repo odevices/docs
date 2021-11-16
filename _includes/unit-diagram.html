@@ -1,0 +1,48 @@
+
+{% assign ply = include.ply | default: 64 %}
+
+<div style="display:flex;flex-wrap:wrap;margin-top:20px;margin-bottom:20px;">
+
+  <div style="width:{{ ply | plus: 0 }}px;">
+    <div style="position:relative;">
+      <object style="position:absolute;left:0px;" data="/images/er-301/unit-anatomy/header-control.svg" width="{{ ply }}"></object>
+    </div>
+    <div style="font-size:85%;text-align:center;position:relative;top:25px;">
+      {{ include.title }}
+    </div>
+  </div>
+
+  {% for i in (1..include.pcount) %}
+    {% assign pnameKey = i | prepend: 'pname' %}
+    {% assign ptypeKey = i | prepend: 'ptype' %}
+    {% assign pname = include[pnameKey] %}
+    {% assign ptype = include[ptypeKey] %}
+    {% case ptype %}
+      {% when "comparator" %}
+      {% assign controlContent = "/images/er-301/unit-anatomy/comparator-control.svg" %}
+      {% when "gainbias" %}
+      {% assign controlContent = "/images/er-301/unit-anatomy/gainbias-control.svg" %}
+      {% when "fader" %}
+      {% assign controlContent = "/images/er-301/unit-anatomy/fader-control.svg" %}
+      {% else %}
+      {% assign controlContent = "/images/er-301/unit-anatomy/unknown-control.svg" %}
+    {% endcase %}
+    {% case i %}
+      {% when include.pcount %}
+      {% assign controlBorder = "/images/er-301/unit-anatomy/last-control.svg" %}
+      {% else %}
+      {% assign controlBorder = "/images/er-301/unit-anatomy/middle-control.svg" %}
+    {% endcase %}
+    <div style="width:{{ ply | plus: 0 }}px;">
+      <div style="position:relative;">
+        <object style="position:absolute;left:0px;" data="{{ controlContent }}" width="{{ ply }}"></object>
+        <object style="position:absolute;left:0px;" data="{{ controlBorder }}" width="{{ ply }}"></object>
+      </div>
+      <div style="font-size:85%;text-align:center;position:relative;top:75px;">
+        <a href="#{{ pname }}">{{ pname }}</a>
+      </div>
+    </div>
+  {% endfor %} 
+
+</div>
+<br clear=all>
