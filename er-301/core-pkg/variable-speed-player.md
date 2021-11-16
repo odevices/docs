@@ -6,6 +6,23 @@ parent: Core Package
 grand_parent: ER-301
 ---
 
+{% include unit-diagram.html 
+title="Vari- Speed Player"
+pcount = 6
+pname1 = "V/oct"
+ptype1 = "gainbias"
+pname2 = "speed"
+ptype2 = "gainbias"
+pname3 = "gate"
+ptype3 = "comparator"
+pname4 = "slice"
+ptype4 = "gainbias"
+pname5 = "shift"
+ptype5 = "gainbias"
+pname6 = "fade"
+ptype6 = "fader"
+%}
+
 ## Overview
 This unit combines a monophonic resampling play head with a (in-memory) sample buffer.  The main feature of this unit is that the speed of the play head can be sample-accurately modulated up to audio rates.  However, regardless of the values of the speed and V/oct parameters, the unit clamps the final speed to be within the range -64x to 64x (i.e. 6 octaves).
 

@@ -7,7 +7,7 @@ grand_parent: ER-301
 ---
 
 {% include unit-diagram.html 
-title="Linear Bipolar VCA (mono)"
+title="Linear Bipolar VCA"
 pcount = 1
 pname1 = "level"
 ptype1 = "gainbias"
@@ -15,7 +15,7 @@ caption = "Mono version."
 %}
 
 {% include unit-diagram.html 
-title="Linear Bipolar VCA (stereo)"
+title="Linear Bipolar VCA"
 pcount = 2
 pname1 = "level"
 ptype1 = "gainbias"

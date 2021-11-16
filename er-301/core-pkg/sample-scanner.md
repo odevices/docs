@@ -6,6 +6,21 @@ parent: Core Package
 grand_parent: ER-301
 ---
 
+{% include unit-diagram.html 
+title="Sample Scanner"
+pcount = 5
+pname1 = "center"
+ptype1 = "gainbias"
+pname2 = "width"
+ptype2 = "gainbias"
+pname3 = "height"
+ptype3 = "gainbias"
+pname4 = "fade"
+ptype4 = "gainbias"
+pname5 = "phase"
+ptype5 = "gainbias"
+%}
+
 ## Overview
 
 This unit lets you (flexibly) turn any sample into an interpolating lookup table.  If you understand the [Bump Scanner](bump-scanner), then the Sample Scanner is exactly the same with the (entire) sample taking the place of the bump.  The incoming CV selects a position in the sample (i.e. indexes into the lookup table) and the unit outputs the value (or an interpolated value if the position falls between two samples).  Most of the complexity of this unit comes the controls that allow you to locate the entire sample somewhere on the input CV range.
