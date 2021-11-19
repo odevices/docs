@@ -65,3 +65,4 @@ exclude:
   - htmlproofer.log
   - design/
 
+incremental: true
