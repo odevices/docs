@@ -49,3 +49,7 @@ Pulls the apex of the envelope forward (positive skew) or backwards (negative sk
 
 Sets the height of the envelope's apex.
 
+## See also
+
+* [ADSR](adsr)
+* [Envelope Follower](envelope-follower)

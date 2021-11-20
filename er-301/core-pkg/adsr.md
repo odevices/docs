@@ -49,3 +49,8 @@ This parameter sets the amplitude of the sustain portion of the envelope. The de
 ### R
 {% include gainbias-control.html summary = "Release time." %}
 This parameter sets the time it takes for the envelope to fall back to zero. The release portion of the envelope is triggered by a falling edge detected at the unit input.
+
+## See also
+
+* [Skewed Sine Env](skewed-sine-env)
+* [Envelope Follower](envelope-follower)
