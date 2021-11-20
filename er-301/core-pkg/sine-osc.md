@@ -42,3 +42,9 @@ For low frequencies (<55Hz) and high feedback amounts (>0.95), the oscillator wi
 * [Waveshaper](https://en.wikipedia.org/wiki/Waveshaper)
 
 {% include osc-tips.md %}
+
+## See also
+
+* [Aliasing Triangle](aliasing-triangle)
+* [Aliasing Saw](aliasing-saw)
+* [Single Cycle](single-cycle)

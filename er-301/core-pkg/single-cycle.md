@@ -25,3 +25,9 @@ content="Often you might have a library of waveforms where each waveform is stor
 Selects which waveshape (i.e. slice) to render from the wavetable.  If scanning between adjacent waveshapes then the wave produced is a linear interpolation of neighboring waveshapes.
 
 {% include sample-commands.md %}
+
+## See also
+
+* [Sine Osc](sine-osc)
+* [Aliasing Triangle](aliasing-triangle)
+* [Aliasing Saw](aliasing-saw)

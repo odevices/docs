@@ -44,3 +44,9 @@ This sample player is great for:
 
 ### fade
 {% include fader-control.html %}
+
+## See also
+
+* [Variable Speed Player](variable-speed-player)
+* [Clocked Player](clocked-player)
+* [Card Player](card-player)

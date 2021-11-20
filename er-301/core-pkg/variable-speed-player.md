@@ -81,3 +81,9 @@ The output might jump discontinuously when the play head loops at the beginning 
 {% include pitfall.html
 content="If you are using a single cycle wave sample to recreate a wavetable oscillator then it is recommended that you set this parameter to zero.  An even better option is to use the [Single Cycle](single-cycle) unit."
 %}
+
+## See also
+
+* [Raw Player](raw-player)
+* [Clocked Player](clocked-player)
+* [Card Player](card-player)

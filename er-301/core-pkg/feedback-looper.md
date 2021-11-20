@@ -88,3 +88,9 @@ file="time-to-fade.png"
 
 {% include looper-wet-parameter.md %}
 {% include fade-parameter.md %}
+
+## See also
+
+* [Dub Looper](dub-looper)
+* [Pedal Looper](pedal-looper)
+* [Manual Loops](manual-loops)

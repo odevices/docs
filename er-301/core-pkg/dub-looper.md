@@ -31,7 +31,7 @@ The Dub Looper combines the input audio with the audio in its buffer like this:
 
 $$
 \begin{align}
-\mbox{NEW} &= (\mbox{dub}) \times \mbox{INPUT} + (1-\mbox{dub}) \times \mbox{OLD} \\
+\mbox{NEW} &= \mbox{dub} \times \mbox{INPUT} + (1-\mbox{dub}) \times \mbox{OLD} \\
 \mbox{OUTPUT} &= \mbox{XFADE}(NEW,INPUT;\mbox{wet})
 \end{align}
 $$
@@ -82,3 +82,9 @@ This parameter determines how much of the input signal should be mixed with the 
 
 {% include looper-wet-parameter.md %}
 {% include fade-parameter.md %}
+
+## See also
+
+* [Feedback Looper](feedback-looper)
+* [Pedal Looper](pedal-looper)
+* [Manual Loops](manual-loops)
