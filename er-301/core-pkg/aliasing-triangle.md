@@ -19,3 +19,9 @@ This oscillator is not anti-aliased.
 {% include osc-controls.md %}
 
 {% include osc-tips.md %}
+
+## See also
+
+* [Aliasing Saw](aliasing-saw)
+* [Sine Osc](sine-osc)
+* [Single Cycle](single-cycle)

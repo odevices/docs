@@ -44,3 +44,12 @@ This parameter controls the amount of the input signal and of the affected signa
 {% include figure.html 
 file="raised-xfade-law.png"
 %}
+
+## See also
+
+* [Doppler Delay](doppler-delay)
+* [Clocked Delay](clocked-delay)
+* [Spread Delay](spread-delay)
+* [Grain Delay](grain-delay)
+* [Micro Delay](micro-delay)
+* [Feedback Looper](feedback-looper)

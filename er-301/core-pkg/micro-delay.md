@@ -24,3 +24,12 @@ Some application are:
 {% include fader-control.html %}
 
 This fader sets the delay time.  If you want a modulate-able delay then please use the regular [Delay Unit](delay).
+
+## See also
+
+* [Delay](delay)
+* [Doppler Delay](doppler-delay)
+* [Spread Delay](spread-delay)
+* [Grain Delay](grain-delay)
+* [Clocked Delay](clocked-delay)
+* [Feedback Looper](feedback-looper)

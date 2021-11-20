@@ -66,3 +66,6 @@ The fade parameter dictates the percentage of the width used to fade out the sam
 {% include gainbias-control.html %}
 The phase parameter rotates the sample within its boundaries with wrap-around.
 
+## See also
+
+* [Bump Scanner](bump-scanner)

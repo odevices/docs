@@ -30,9 +30,18 @@ This parameter only appears in stereo chains.  The left and right delay times ar
 
 $$
 \begin{array}{lcl}
-\text{left delay} & = &(1-\text{spread})*\text{delay} \\
-\text{right delay} & = & (1+\text{spread})*\text{delay}
+\text{left delay} & = &(1-\text{spread}) \times \text{delay} \\
+\text{right delay} & = & (1+\text{spread}) \times \text{delay}
 \end{array}
 $$
 
 For example, if the spread is 0.1, then the Left Delay is shrunk by 10% and the Right Delay is expanded by 10%.  A spread of -0.1 would have the opposite effect. Subtle amounts will "spread" the repeats across the stereo field while more substantial amounts of spread will result in a kind of ping-pong effect.
+
+## See also
+
+* [Delay](delay)
+* [Doppler Delay](doppler-delay)
+* [Clocked Delay](clocked-delay)
+* [Grain Delay](grain-delay)
+* [Micro Delay](micro-delay)
+* [Feedback Looper](feedback-looper)
