@@ -23,6 +23,8 @@ Some applications are:
 * Rate control
 * Turn gates into ramps.
 
+Keep in mind that sometimes what you are really looking for is an [Envelope Follower](envelope-follower).  So please check that out too.
+
 ## Parameters
 
 ### time
@@ -33,3 +35,14 @@ This time value is use to determine how long it takes for the output value to ch
 {% include figure.html
 file="slewing-a-step.png"
 %}
+
+### mode
+{% include option-control.html summary="Apply rate limiting to up, down, or all changes." %}
+
+* **up**: Only apply rate limiting to increases.
+* **both**: Apply rate limiting to all changes.
+* **down**: Only apply rate limiting to decreases.
+
+## See also
+
+* [Envelope Follower](envelope-follower)
