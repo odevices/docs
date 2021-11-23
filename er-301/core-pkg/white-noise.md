@@ -1,6 +1,6 @@
 ---
 layout: draft-unit
-title: White Noise
+title: x White Noise
 subtitle: 
 parent: Core Package
 grand_parent: ER-301

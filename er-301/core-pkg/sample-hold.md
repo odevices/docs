@@ -1,6 +1,6 @@
 ---
 layout: draft-unit
-title: Sample & Hold
+title: x Sample & Hold
 subtitle: 
 parent: Core Package
 grand_parent: ER-301

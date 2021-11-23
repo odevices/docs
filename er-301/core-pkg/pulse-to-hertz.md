@@ -1,6 +1,6 @@
 ---
 layout: draft-unit
-title: Pulse to Hertz
+title: x Pulse to Hertz
 subtitle: 
 parent: Core Package
 grand_parent: ER-301

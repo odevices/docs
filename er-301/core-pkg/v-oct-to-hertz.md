@@ -1,6 +1,6 @@
 ---
 layout: draft-unit
-title: V/oct to Hertz
+title: x V/oct to Hertz
 subtitle: 
 parent: Core Package
 grand_parent: ER-301

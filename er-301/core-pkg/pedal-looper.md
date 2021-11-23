@@ -1,6 +1,6 @@
 ---
 layout: draft-unit
-title: Pedal Looper
+title: x Pedal Looper
 subtitle: 
 parent: Core Package
 grand_parent: ER-301
