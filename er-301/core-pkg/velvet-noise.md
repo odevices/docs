@@ -1,7 +1,7 @@
 ---
 layout: draft-unit
 title: Velvet Noise
-subtitle: 
+subtitle: Random (+/-) trigger generator with rate control.
 parent: Core Package
 grand_parent: ER-301
 ---
