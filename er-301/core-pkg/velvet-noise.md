@@ -9,15 +9,15 @@ grand_parent: ER-301
 {% include unit-diagram.html
 title="Velvet Noise"
 pcount=1
-pname="rate"
-ptype="gainbias"
+pname1="rate"
+ptype1="gainbias"
 %}
 
 ## Overview
 
 Velvet noise is a random train of positive and negative pulses that are each only one sample in length.  Digitally speaking, it is a random sequence of the following three values: -1, 0, and 1.  The rate (and hence the density) of the velvet noise can be controlled by changing the probability that a zero value will be generated.
 
-FYI: I first encountered velvet noise when studying reverbation algorithms.  You can read about the role of velvet noise in creating reverbs [http://users.spa.aalto.fi/mak/PUB/AES_Jarvelainen_velvet.pdf here].
+I first encountered velvet noise when studying reverbation algorithms such as [these](https://www.google.com/search?q=velvet+noise+reverb).
 
 Some applications are:
 * Generating random triggers at a target rate.
