@@ -1,7 +1,7 @@
 ---
 layout: draft-unit
 title: Grain Delay
-subtitle: A delay line with a granular playhead for separate control of pitch and speed.
+subtitle: A delay line with a granular playhead for separate control of playback speed and delay time.
 parent: Core Package
 grand_parent: ER-301
 ---
