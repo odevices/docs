@@ -18,7 +18,7 @@ ptype3="fader"
 %}
 
 ## Overview
-This unit implements 3 simple [https://en.wikipedia.org/wiki/Limiter limiting] algorithms: **hard**, **cubic** and **inverse square root**.  The **hard** algorithm adds the most (odd) harmonics while the **inverse square root** adds the least. Furthermore, there are separate *pre-gain* and *post-gain* stages so that you can dial in the exact amount of non-linearity that you desire in the final output.
+This unit implements 3 [limiting](https://en.wikipedia.org/wiki/Limiter) algorithms: **hard**, **cubic** and **inverse square root**.  The **hard** algorithm adds the most (odd) harmonics while the **inverse square root** adds the least. Furthermore, there are separate *pre-gain* and *post-gain* stages so that you can dial in the exact amount of non-linearity that you desire in the final output.
 
 {% include figure.html
 file="limiter.png"
