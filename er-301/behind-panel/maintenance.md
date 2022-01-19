@@ -46,12 +46,20 @@ Some things to watch out for according to users:
 * Work in a very dust free area, as the displays and lenses tend to attract dust, and it can get caught between the OLEDs and the acrylic when reassembling. Having a tape loop of blue painter’s tape can help grab any dust off the acrylic or displays without putting any tiny scratches in the acrylic lenses. ([thread](https://forum.orthogonaldevices.com/t/alternate-black-panel-for-the-er-301/2341/118?u=odevices))
 
 # Replacing buttons
-If you feel confident removing the panel on your ER-301 and replacing button caps, you can try doing it yourself.  The part number for the gray buttons is [D6C10-F1-LFS](https://www.digikey.com/products/en?WT.z_se_ps=1&keywords=D6C10-F1-LFS).  There are other colors available but make sure you order the square type with 1.3N of actuating force:
+It is not hard to replace the button caps and internals (spring and upper contact plate). Some reasons for replacing buttons are:
 
-{% include figure.html
-file="D6C-buttons.png"
-%}
+* Customizing the colors.
+* Cleaning or replacing corroded contacts.
+* Fixing a sticky button.
 
 I find that prying off the button caps is most conveniently done with a 2mm flathead screwdriver.  Here is what the process looks like:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mQMnuVqC6tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## How to purchase new buttons
+
+The part number for the gray buttons is [D6C10-F1-LFS](https://www.digikey.com/products/en?WT.z_se_ps=1&keywords=D6C10-F1-LFS).  There are other colors available but make sure you order the square type with 1.3N of actuating force:
+
+{% include figure.html
+file="D6C-buttons.png"
+%}
