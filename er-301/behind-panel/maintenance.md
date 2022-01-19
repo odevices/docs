@@ -56,6 +56,10 @@ I find that prying off the button caps is most conveniently done with a 2mm flat
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mQMnuVqC6tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+{% include pitfall.html
+content="Inside the button cap is a spring and contact plate.  If you are going to re-use them then be careful not to lose the spring (like I did in the video) and take care not to bend the contact plate."
+%}
+
 ## How to purchase new buttons
 
 The part number for the gray buttons is [D6C10-F1-LFS](https://www.digikey.com/products/en?WT.z_se_ps=1&keywords=D6C10-F1-LFS).  There are other colors available but make sure you order the square type with 1.3N of actuating force:
