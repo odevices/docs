@@ -6,3 +6,4 @@ htmlproofer.log
 .jekyll-metadata
 vendor
 *~
+.vscode/
