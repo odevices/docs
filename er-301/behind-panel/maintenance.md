@@ -67,3 +67,15 @@ The part number for the gray buttons is [D6C10-F1-LFS](https://www.digikey.com/p
 {% include figure.html
 file="D6C-buttons.png"
 %}
+
+# Replacing toggle switches
+
+Replacing a toggle switch requires the ability to to desolder and solder through-hole components.  All of my modules come with long flat toggles (part number: ATE1E-2F3-10-Z) but there is an alternative part with a short round paddle (part number: ATE1E-2M3-10-Z) that can be used as a drop-in replacement.
+
+{% include gallery.html
+count=2
+file1="toggle-long-paddle.jpeg"
+caption1="**ATE1E-2F3-10-Z**: This is the default toggle with a long flat paddle."
+file2="toggle-short-paddle.jpeg"
+caption2="**ATE1E-2M3-10-Z**: This is an alternative toggle with a shorter round paddle."
+%}
