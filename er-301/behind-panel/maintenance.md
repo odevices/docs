@@ -70,7 +70,7 @@ file="D6C-buttons.png"
 
 # Replacing toggle switches
 
-Replacing a toggle switch requires the ability to to desolder and solder through-hole components.  All of my modules come with long flat toggles (part number: ATE1E-2F3-10-Z) but there is an alternative part with a short round paddle (part number: ATE1E-2M3-10-Z) that can be used as a drop-in replacement.
+Replacing a toggle switch requires the ability to desolder and solder through-hole components.  All of my modules come with long flat toggles (part number: ATE1E-2F3-10-Z) but there is an alternative part with a short round paddle (part number: ATE1E-2M3-10-Z) that can be used as a drop-in replacement.
 
 {% include gallery.html
 count=2
