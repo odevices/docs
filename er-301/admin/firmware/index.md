@@ -5,10 +5,23 @@ parent: Admin
 grand_parent: ER-301
 ---
 
-# {{page.title}}
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+# How to update
 
 {% include pitfall.html
-content="Warning! There is a possibility that quicksaves and presets made with newer firmware versions are not backwards compatible. So to be safe you should make a copy of your ```ER-301/<version>``` directory before switching firmware.  In very old versions, this folder was called ```ER-301/sc```."
+content="Warning! In general, quicksaves and presets made with newer firmware versions are not backwards compatible."
+%}
+
+{% include pitfall.html
+content="It is important that power to the ER-301 is not interrupted during the installation step or you will be left with corrupted files on your rear SD card."
 %}
 
 Unless there is a problem, you will always update the ER-301's firmware via the SD card on the front.  This means that there is no reason to remove the module from your case.  Furthermore, it is not necessary to power down during this firmware update procedure.
@@ -34,10 +47,48 @@ file8="reboot.png"
 caption8="Step 8: Once the files are installed, press REBOOT (S3)."
 %}
 
-{% include pitfall.html
-content="It is important that power to the ER-301 is not interrupted during the installation step or you will be left with corrupted files on your rear SD card.  If this happens see the advanced method (below) for how to restore your rear SD card to a bootable state."
-%}
+# Forward compatibility of presets and quicksaves
 
-{% include pitfall.html
-content="If you have v0.4.20 installed then this procedure will fail because the builtin firmware updater is broken in this version.  Please use the Advanced Method below instead."
-%}
+I am always doing my best to preserve forward compatibility of your saved work.  However, and this is especially true of the early firmware versions, sometimes in order to move forward with the road map I am forced to make breaking changes.
+
+
+## v0.3
+
+You can try but loading v0.2 presets and quicksaves will usually fail.
+
+## v0.4
+
+Partial support for v0.3 presets/quicksaves.  At the very least, you will need to copy and change the extension of the older *.lua files as follows:
+
+* Unit presets: *.unit
+* Chain presets: *.chain
+* Quicksaves: *.save
+
+## v0.5
+
+No breaking changes.
+
+## v0.6
+
+Some changes in how local routings are stored.  Most presets and quicksaves are not affected but if you used a lot of complicated local routings then I would double check whether or not the connections are still there.
+
+# Where are my units?
+
+Starting in v0.6, units are installed as packages via the Package Manager.  This includes the factory-provided "core" units.  The firmware updater for v0.6 and forward has been updated to be aware of these packages.  However, previous firmware versions are not package-aware.  The result is that when you update to v0.6+ firmware from say v0.4 or v0.5 firmware, you will not have most of the core units installed.
+
+In order to fix this, you just have to install the firmware again from inside the package-aware (i.e. v0.6+) firmware.  There are on-screen instructions that tell you to do this but some fail to notice them.
+
+# Where are my quicksaves?
+
+As long as you don't skip a minor version when updating, the firmware updater will attempt to copy your quicksaves over to the new firmware system folder on the front card: ```ER-301/v{major}.{minor}```.  However, this will not happen in the following situations:
+
+* You skipped a minor version when updating.  For example you updated from v0.4.26 to v0.6.16 skipping v0.5.
+* The system folder (```ER-301/v{major}.{minor}```) for the new version already exists.  This means you have already updated to this (major.minor) version in the past.
+
+The workaround is to bring your front SD card over to a PC and copy:
+
+```ER-301/v{old version}/quicksaves``` to ```ER-301/v{new version}/quicksaves```
+
+Here is a concrete example.  You were working with v0.4.27 and then you updated to v0.6.16, skipping v0.5.  In order to manually bring your quicksaves over to the new version, you would copy as follows:
+
+```ER-301/v0.4/quicksaves``` to ```ER-301/v0.6/quicksaves```
