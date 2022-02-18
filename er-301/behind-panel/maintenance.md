@@ -24,7 +24,7 @@ file="AM3352-SOM-2.jpg"
 caption="This is the CPU board on the back of the ER-301.  It holds the CPU, RAM and the SD card which contains the firmware.  This CPU board is manufactured by another company called Olimex."
 %}
 
-Sometimes it is necessary to replace the CPU board on the ER-301.  This process is easy and safe as long as you take your time, take basic anti-static precautions and do not force anything.
+This process is easy and safe as long as you take your time, take basic anti-static precautions and do not force anything.
 
 1. Purchase a replacement CPU board (AM3352-SOM) from [Olimex](https://www.olimex.com/Products/SOM/AM335X/AM3352-SOM/) for about 37EUR.
 1. Remove the rear SD from the old CPU board and insert it in the SD slot on the new CPU board.
