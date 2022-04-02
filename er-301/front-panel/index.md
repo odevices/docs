@@ -26,7 +26,7 @@ Here I describe the various elements present on the 30hp front panel of the ER-3
 As with all of my modules, I offer 3 flavors of panels: Original Flavor, Nostalgia and People's Choice.  You can see photos of these different panel types here: [Photos of Panel Flavors](http://www.orthogonaldevices.com/er-301/panels)  
 
  **Panel Design Data**<br>
-Also, if you wish to make your own custom panel you can download the panel design data from here: [ER-301 Panel Design Data](http://www.orthogonaldevices.com/files/er-301-panel-rev2.zip?attredirects=0&d=1)
+Also, if you wish to make your own custom panel you can download the panel design data from here: [ER-301 Panel Design Data](http://old.orthogonaldevices.com/files/er-301-panel-rev2.zip?attredirects=0&d=1)
 
 # The Knob
 {% include figure.html
