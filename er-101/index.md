@@ -10,4 +10,4 @@ nav_order: 1
 I'm in the process of migrating the ER-101 manual to this markdown-based format.  In the meantime, here is a link to the PDF manual.
 
 * [ER-101 User Manual (v2.09)](/images/er-101-user-manual-f2.09.pdf)
-* [Manipulating Snapshots](/er-101/snapshots.md)
+* [Manipulating Snapshots](/er-101/snapshots)
