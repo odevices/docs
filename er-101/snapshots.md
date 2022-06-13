@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Manipulating Snapshots
+parent: ER-101
 has_children: false
 nav_order: 1
 ---
@@ -10,8 +11,7 @@ nav_order: 1
 The XML files that are created by the ER-101 Programmer are easily generated and modified if you are comfortable with XML and even easier if you are comfortable with dotNET/C#.  While this page is a bit sparse at the moment, I will try to collect here knowledge and utilities for would-be hackers of ER-101's snapshot files.
 
 * [The ER-101 Common Library](/assets/ER101Common.zip): this is the same library (as a Visual Studio C# project) that the ER-101 Programmer uses to parse and generate snapshot files.  You will want to start with the LoadFromXML(...) and SaveToXML(...) methods in the ER101 class.
-
-Download an example of a snapshot file from [here](/assets/er-101-example-snapshots.xml).  
+* Download an example of a snapshot file from [here](/assets/er-101-example-snapshots.xml).  
 
 ## Uploading voltage tables
 
