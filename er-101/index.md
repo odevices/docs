@@ -11,3 +11,4 @@ I'm in the process of migrating the ER-101 manual to this markdown-based format.
 
 * [ER-101 User Manual (v2.09)](/images/er-101-user-manual-f2.09.pdf)
 * [Manipulating Snapshots](/er-101/snapshots)
+* [Maintenance and Repair](/er-101/maintenance)
